@@ -23,9 +23,9 @@ This is a private repository for the ScriptShop 5M project, a personal collectio
 
 ## 📂 Project Structure
 
-- `/src` - All the custom PHP source code for the project.
-- `/public` - Publicly accessible files, including the main `index.php` entry point.
-- `/resources` - Static resources such as CSS, JavaScript, and image files.
+- `/dist` - Publicly accessible files, including the main `index.php` entry point.
+- `/dist/components` - All the custom PHP source code for the project.
+- `/dist/assets` - Static resources such as CSS, JavaScript, and image files.
 - `/config` - Configuration files that are not web-accessible for security reasons.
 - `/vendor` - Composer-managed dependencies (PHP).
 - `/node_modules` - npm-managed dependencies (JavaScript/Node.js).
