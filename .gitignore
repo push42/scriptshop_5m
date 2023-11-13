@@ -4,6 +4,10 @@
 # Node dependencies
 /node_modules/
 
+# AntiSteal - Remove once project done
+dist/components/
+dist/assets/images/products/
+
 # PHPStorm project files
 .idea/
 
