@@ -1,0 +1,24 @@
+# Turn on rewriting.
+RewriteEngine On
+
+# Base directory of the rewrite rules
+RewriteBase /project1211/
+
+# Redirect requests to the 'dist' directory without changing the URL in the address bar
+RewriteCond %{REQUEST_URI} !^/project1211/dist/
+RewriteRule ^(.*)$ dist/$1 [L,QSA]
+
+# Prevent access to 'config' directory and its contents.
+RewriteCond %{SCRIPT_FILENAME} /config/
+RewriteRule ^.*$ - [F,L]
+
+# Prevent direct access to .php files in the 'config' directory.
+RewriteCond %{THE_REQUEST} /config/.*\.php [NC]
+RewriteRule ^ - [F]
+
+# Alternatively, block access to all .php files in the project (excluding 'dist')
+RewriteCond %{REQUEST_URI} !^/project1211/dist/
+RewriteRule \.php$ - [F,L]
+
+# Prevent directory listings
+Options -Indexes

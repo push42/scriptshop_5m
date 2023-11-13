@@ -1,0 +1,18 @@
+{
+    "name": "privnote/project1211",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Privnote\\Project1211\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "push42",
+            "email": "thiesmk2@gmail.com"
+        }
+    ],
+    "require": {
+        "geoip2/geoip2": "^2.13"
+    }
+}

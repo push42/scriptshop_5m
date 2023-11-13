@@ -1,0 +1,2 @@
+# Deny access to everything by default
+Deny from all
