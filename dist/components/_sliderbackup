@@ -1,0 +1,115 @@
+<!-- ... additional slides ... -->
+                <div class="swiper-slide relative">
+                    <img src="./assets/images/drug-creater.jpeg" alt="Drugs Creator" class="w-full h-full object-cover"/>
+                    <!-- Price Badge -->
+                    <div class="absolute top-4 right-4 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-bold transition-all duration-300 ease-in-out price-badge">15.00€</div>
+                    <!-- Tags -->
+                    <div class="absolute top-4 left-4 flex space-x-2">
+                        <div class="tag bg-zinc-800 hover:bg-blue-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out" data-tooltip="Essential Mode Framework">ESX</div>
+                        <div class="tag bg-zinc-800 hover:bg-green-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">QBCORE</div>
+                        <div class="tag bg-zinc-800 hover:bg-red-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">STANDALONE</div>
+                    </div>
+                    <!-- Overlay Container -->
+                    <div class="absolute inset-0 flex flex-col justify-between p-6">
+                        <!-- Text Container with Backdrop Filter -->
+                        <div class="mt-auto w-full backdrop-blur-sm bg-black bg-opacity-60 p-4 rounded-lg">
+                            <h4 class="text-sm text-white font-black mb-2 uppercase">Advanced Drugs Creator</h4>
+                            <p class="text-white">This script allows server administrators to easily create drugs in many ways with an in-game menu.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="./assets/images/smartphone.png" alt="Smartphone App" class="w-full h-full object-cover"/>
+                    <!-- Price Badge -->
+                    <div class="absolute top-4 right-4 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-bold transition-all duration-300 ease-in-out price-badge">37.50€</div>
+                    <!-- Tags -->
+                    <div class="absolute top-4 left-4 flex space-x-2">
+                        <div class="tag bg-zinc-800 hover:bg-blue-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out" data-tooltip="Essential Mode Framework">ESX</div>
+                        <div class="tag bg-zinc-800 hover:bg-green-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">QBCORE</div>
+                        <div class="tag bg-zinc-800 hover:bg-red-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">STANDALONE</div>
+                    </div>
+                    <!-- Overlay Container -->
+                    <div class="absolute inset-0 flex flex-col justify-between p-6">
+                        <!-- Text Container with Backdrop Filter -->
+                        <div class="mt-auto w-full backdrop-blur-sm bg-black bg-opacity-60 p-4 rounded-lg">
+                            <h4 class="text-sm text-white font-black mb-2 uppercase">Quasar Smartphone</h4>
+                            <p class="text-white">The best in-game phone experience with over 40+ apps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="./assets/images/t1ger.png" alt="T1ger Gang" class="w-full h-full object-cover"/>
+                    <!-- Price Badge -->
+                    <div class="absolute top-4 right-4 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-bold transition-all duration-300 ease-in-out price-badge">19.99€</div>
+                    <!-- Tags -->
+                    <div class="absolute top-4 left-4 flex space-x-2">
+                        <div class="tag bg-zinc-800 hover:bg-blue-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out" data-tooltip="Essential Mode Framework">ESX</div>
+                        <div class="tag bg-zinc-800 hover:bg-green-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">QBCORE</div>
+                        <div class="tag bg-zinc-800 hover:bg-red-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">STANDALONE</div>
+                    </div>
+                    <!-- Overlay Container -->
+                    <div class="absolute inset-0 flex flex-col justify-between p-6">
+                        <!-- Text Container with Backdrop Filter -->
+                        <div class="mt-auto w-full backdrop-blur-sm bg-black bg-opacity-60 p-4 rounded-lg">
+                            <h4 class="text-sm text-white font-black mb-2 uppercase">T1GER GANG SYSTEM</h4>
+                            <p class="text-white">This is a complex gang-system resource, which is a "must-have" on your FiveM roleplay server.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="./assets/images/window.jpg" alt="Window Cleaner" class="w-full h-full object-cover"/>
+                    <!-- Price Badge -->
+                    <div class="absolute top-4 right-4 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-bold transition-all duration-300 ease-in-out price-badge">10.00€</div>
+                    <!-- Tags -->
+                    <div class="absolute top-4 left-4 flex space-x-2">
+                        <div class="tag bg-zinc-800 hover:bg-blue-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out" data-tooltip="Essential Mode Framework">ESX</div>
+                        <div class="tag bg-zinc-800 hover:bg-green-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">QBCORE</div>
+                        <div class="tag bg-zinc-800 hover:bg-red-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">STANDALONE</div>
+                    </div>
+                    <!-- Overlay Container -->
+                    <div class="absolute inset-0 flex flex-col justify-between p-6">
+                        <!-- Text Container with Backdrop Filter -->
+                        <div class="mt-auto w-full backdrop-blur-sm bg-black bg-opacity-60 p-4 rounded-lg">
+                            <h4 class="text-sm text-white font-black mb-2 uppercase"> Multiplayer Window Cleaner</h4>
+                            <p class="text-white">The best in-game phone experience with over 40+ apps.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="./assets/images/tv.jpg" alt="RTX TV" class="w-full h-full object-cover"/>
+                    <!-- Price Badge -->
+                    <div class="absolute top-4 right-4 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-bold transition-all duration-300 ease-in-out price-badge">12.50€</div>
+                    <!-- Tags -->
+                    <div class="absolute top-4 left-4 flex space-x-2">
+                        <div class="tag bg-zinc-800 hover:bg-blue-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out" data-tooltip="Essential Mode Framework">ESX</div>
+                        <div class="tag bg-zinc-800 hover:bg-green-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">QBCORE</div>
+                        <div class="tag bg-zinc-800 hover:bg-red-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">STANDALONE</div>
+                    </div>
+                    <!-- Overlay Container -->
+                    <div class="absolute inset-0 flex flex-col justify-between p-6">
+                        <!-- Text Container with Backdrop Filter -->
+                        <div class="mt-auto w-full backdrop-blur-sm bg-black bg-opacity-60 p-4 rounded-lg">
+                            <h4 class="text-sm text-white font-black mb-2 uppercase">RTX Television</h4>
+                            <p class="text-white">Turn any TV / Monitor in GTA into a usable TV.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide relative">
+                    <img src="./assets/images/okok-garage.png" alt="okokGarage" class="w-full h-full object-cover"/>
+                    <!-- Price Badge -->
+                    <div class="absolute top-4 right-4 bg-red-500 text-white py-2 px-4 rounded-lg text-sm font-bold transition-all duration-300 ease-in-out price-badge">19.99€</div>
+                    <!-- Tags -->
+                    <div class="absolute top-4 left-4 flex space-x-2">
+                        <div class="tag bg-zinc-800 hover:bg-blue-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out" data-tooltip="Essential Mode Framework">ESX</div>
+                        <div class="tag bg-zinc-800 hover:bg-green-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">QBCORE</div>
+                        <div class="tag bg-zinc-800 hover:bg-red-600 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase cursor-pointer transition duration-300 ease-in-out">STANDALONE</div>
+                    </div>
+                    <!-- Overlay Container -->
+                    <div class="absolute inset-0 flex flex-col justify-between p-6">
+                        <!-- Text Container with Backdrop Filter -->
+                        <div class="mt-auto w-full backdrop-blur-sm bg-black bg-opacity-60 p-4 rounded-lg">
+                            <h4 class="text-sm text-white font-black mb-2 uppercase">okokGarage</h4>
+                            <p class="text-white">One of the best garage scripts out there.</p>
+                        </div>
+                    </div>
+                </div>

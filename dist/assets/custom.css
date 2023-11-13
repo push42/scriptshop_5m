@@ -1,0 +1,278 @@
+.bg-black-custom {
+    background: rgb(10,10,10);
+    background: radial-gradient(circle, rgba(10,10,10,1) 0%, rgba(17,17,17,1) 30%, rgba(17,17,17,1) 70%, rgba(10,10,10,1) 100%); 
+}
+
+
+/* Initially hide the sub-menu */
+.sub-list {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the sub-menu below the parent item */
+    left: 0;
+    background: #000; /* Background color for the sub-menu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for sub-menu items */
+.sub-list li {
+    padding: 10px;
+}
+
+/* Display the sub-menu when hovering over the parent list item */
+.sub-list-parent:hover .sub-list {
+    display: block;
+}
+
+
+
+
+
+/* CSS styles to gray out sold products */
+.sold {
+    filter: grayscale(100%);
+    opacity: 0.5; /* You can adjust the opacity as needed */
+    pointer-events: none; /* To disable interactions with the product */
+}
+
+/* CSS styles for the "Sold" label */
+.sold-label {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
+    background-color: red; /* Set the background color for the label */
+    color: white; /* Set the text color for the label */
+    padding: 4px 8px; /* Adjust padding as needed */
+    border-radius: 4px; /* Add rounded corners to the label */
+    font-weight: bold;
+    z-index: 1; /* Ensure the label appears on top of the product */
+}
+
+
+
+
+
+#countdown-wrapper {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+    z-index: 30; /* Maintain high z-index to keep it above other elements */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: flex; /* Use flex display for inline positioning */
+    align-items: center; /* Align items vertically */
+}
+
+#countdown {
+    font-weight: bold;
+}
+
+#uptime {
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+    z-index: 30; /* Increase the z-index to ensure it's above other elements */
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* Flag Symbols - Adjust the positioning for top right */
+.absolute.top-0.right-0 {
+    top: 0;
+    right: 0;
+}
+
+.absolute.top-0.right-0 a {
+    margin-left: 10px; /* Add some space between the flag symbols */
+}
+
+.absolute.top-0.right-0 img {
+    width: 12px; /* Adjust the size as needed */
+    height: auto; /* Automatically maintain aspect ratio */
+}
+
+.footer-icon:hover {
+    color: #183df9; /* Tailwind purple-500 */
+    transform: translateY(-2px); /* Slightly raise the icon */
+    transition: transform 0.2s, color 0.2s;
+}
+
+button:hover, a:hover {
+    transform: translateY(-2px); /* makes button or link move slightly up when hovered */
+    transition: all 0.3s ease-in-out; /* smooth transition for the effect */
+}
+
+
+
+
+
+
+.hero-title {
+    animation: fadeInUp 1s ease-in-out forwards;
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  
+  .hero-subtitle {
+    animation: fadeInUp 1.2s ease-in-out forwards;
+    animation-delay: 0.2s; /* Delays the start of the animation */
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateZ(0);
+    }
+  }
+  
+  .contact-button {
+    animation: bounceIn 1s forwards;
+    animation-delay: 0.4s; /* Delays the start of the bounce animation */
+  }
+
+  .about-me-button {
+    animation: bounceIn 1s forwards;
+    animation-delay: 0.55s; /* Delays the start of the bounce animation */
+  }
+  
+  @keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+    }
+    20% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+      transform: scale3d(.9, .9, .9);
+    }
+    60% {
+      opacity: 1;
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+      transform: scale3d(.97, .97, .97);
+    }
+    100% {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+
+.hover:scale-105 {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hover:scale-105:hover, .hover:scale-105:focus, .hover:scale-105:active {
+    transform: scale(1.05);
+}
+
+
+/* Adding some basic styling for hover effects */
+.badge-title:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Tooltip container */
+.tag {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tag:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -50px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  width: 100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tag:hover::after {
+  opacity: 1;
+}
+
+.bg-dark-theme {
+  background-color: #121212;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Space between search input and dropdown */
+}
+
+.bgimage-background {
+  background-image: url('https://images.saymedia-content.com/.image/t_share/MTkzODAzNTgyODUxMDY1MzI4/cool-css-backgrounds.jpg');
+  background-position: center;
+  background-repeat: no-repeat, repeat;
+}
+
+
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100; /* Behind everything */
+}
+
+/* Add styles to make other content stand out over the video */
+.relative {
+  position: relative;
+  z-index: 1; /* Ensure it's above the video background */
+}
+
+/* Ensure the body has no margin or padding */
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+::placeholder {
+  color: rgb(19, 19, 19);
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: rgb(19, 19, 19);
+}
