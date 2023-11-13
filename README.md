@@ -11,7 +11,8 @@
 This is a private repository for the ScriptShop 5M project, a personal collection of scripts and utilities designed for use with the FiveM mod for Grand Theft Auto V.
 
 Preview from 14.11.2023 / 00:27 - may have changed already
-![Preview1](https://i.ibb.co/Fn7T26T/1.png)
+
+![Preview1](https://i.ibb.co/JztVS7M/1.png)
 ![Preview2](https://i.ibb.co/GWK0c2R/2.png)
 ![Preview3](https://i.ibb.co/PG8MtXY/3.png)
 ![Preview4](https://i.ibb.co/zmJ9xkb/4.png)
