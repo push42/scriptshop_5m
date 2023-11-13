@@ -9,6 +9,8 @@
 # Project 1211: ScriptShop 5M
 
 This is a private repository for the ScriptShop 5M project, a personal collection of scripts and utilities designed for use with the FiveM mod for Grand Theft Auto V.
+![Login Preview](https://i.ibb.co/BqMMBs3/ezgif-com-optimize.gif)
+
 
 ## Project Structure
 
