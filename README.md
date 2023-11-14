@@ -1,10 +1,9 @@
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/push42/scriptshop_5m)
+⭐ ![Custom](https://img.shields.io/badge/FiveM%20Script%20Collection-8A2BE2)
+
+![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)
 ![GitHub](https://img.shields.io/github/license/push42/scriptshop_5m)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/push42/scriptshop_5m)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/push42/scriptshop_5m)
-![GitHub stars](https://img.shields.io/github/stars/push42/scriptshop_5m?style=social)
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-[![Build Status](https://travis-ci.org/push42/scriptshop_5m.svg?branch=master)](https://travis-ci.org/push42/scriptshop_5m)
-[![codecov](https://codecov.io/gh/push42/scriptshop_5m/branch/master/graph/badge.svg)](https://codecov.io/gh/push42/scriptshop_5m)
 
 # ⭐ Project 1211: ScriptShop 5M
 
