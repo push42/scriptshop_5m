@@ -1,10 +1,11 @@
 ⭐ ![Custom](https://img.shields.io/badge/FiveM%20Script%20Collection-8A2BE2)
 
+![Custom](https://img.shields.io/badge/still%20in-Development-red)
 ![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)
 ![GitHub](https://img.shields.io/github/license/push42/scriptshop_5m)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/push42/scriptshop_5m)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/push42/scriptshop_5m)
-![Custom](https://img.shields.io/badge/still%20in-Development-red)
+
 
 # 💜 Project 1211: ScriptShop 5M
 
