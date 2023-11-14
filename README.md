@@ -1,8 +1,8 @@
 ⭐ ![Custom](https://img.shields.io/badge/FiveM%20Script%20Collection-8A2BE2)
 
-![Custom](https://img.shields.io/badge/still%20in-Development-red)
-![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)
-![GitHub](https://img.shields.io/github/license/push42/scriptshop_5m)
+![Custom](https://img.shields.io/badge/still%20in-Development-magenta)
+![Custom2](https://img.shields.io/badge/Licence-GPL%203.0%20license%20-magenta)
+![Custom2](https://img.shields.io/badge/Version-1.0.1-magenta)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/push42/scriptshop_5m)
 
 
