@@ -19,7 +19,10 @@ This is a private repository for the ScriptShop 5M project, a personal collectio
 ![Preview4](https://i.ibb.co/zmJ9xkb/4.png)
 ![Preview5](https://i.ibb.co/mRLhBtw/5.png)
 
-
+## ***OLD***-Design
+![Preview6](https://i.ibb.co/FBKDdqD/01.png)
+![Preview7](https://i.ibb.co/Dtrb37J/02.png)
+![Preview8](https://i.ibb.co/rs1pkYf/03.png)
 
 ## 📂 Project Structure
 
