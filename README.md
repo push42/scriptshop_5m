@@ -5,7 +5,7 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/push42/scriptshop_5m)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/push42/scriptshop_5m)
 
-# ⭐ Project 1211: ScriptShop 5M
+# 💜 Project 1211: ScriptShop 5M
 
 This is a private repository for the ScriptShop 5M project, a personal collection of scripts and utilities designed for use with the FiveM mod for Grand Theft Auto V.
 
