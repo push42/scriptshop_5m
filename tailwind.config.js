@@ -2,7 +2,9 @@
 module.exports = {
   content: [
     "./dist/*.{html,js,php}",
-    "./dist/**/*.{html,js,php}"
+    "./dist/**/*.{html,js,php}",
+    "./dist/pages/**.{html,js,php}",
+    "./dist/components/**.{html,js,php}"
   ],
   presets: [],
   darkMode: 'media', // or 'class'
