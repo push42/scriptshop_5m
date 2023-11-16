@@ -1,0 +1,28 @@
+
+/* Flag Symbols - Adjust the positioning for top right */
+.absolute.top-0.right-0 {
+    top: 0;
+    right: 0;
+}
+
+.absolute.top-0.right-0 a {
+    margin-left: 10px; /* Add some space between the flag symbols */
+}
+
+.absolute.top-0.right-0 img {
+    width: 12px; /* Adjust the size as needed */
+    height: auto; /* Automatically maintain aspect ratio */
+}
+
+.footer-icon:hover {
+    color: #183df9; /* Tailwind purple-500 */
+    transform: translateY(-2px); /* Slightly raise the icon */
+    transition: transform 0.2s, color 0.2s;
+}
+
+button:hover, a:hover {
+    transform: translateY(-2px); /* makes button or link move slightly up when hovered */
+    transition: all 0.3s ease-in-out; /* smooth transition for the effect */
+}
+
+

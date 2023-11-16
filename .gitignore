@@ -5,8 +5,10 @@
 /node_modules/
 
 # project done?
-dist/components/
+# dist/components/
 dist/assets/images/products/
+dist/components/_productlist.php
+dist/pages/proof.php
 
 # PHPStorm project files
 .idea/
@@ -50,7 +52,6 @@ nbproject
 
 # Build directory
 /build/
-/dist/
 
 # Ignore configuration files that may contain sensitive information
 *.conf

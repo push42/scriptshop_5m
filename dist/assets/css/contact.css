@@ -1,0 +1,12 @@
+/* Contact form */
+.required {
+    color: #A855F7; /* Light shade of purple */
+  }
+
+  .input-field:focus {
+    border-color: #A855F7; /* Purple border on focus */
+    outline: none;
+  }
+  .field label {
+    color: #D1D5DB; /* Light grey label */
+  }
