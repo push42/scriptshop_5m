@@ -4,9 +4,9 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Load in the Header
-require '../components/_header.php';
+require './components/_header.php';
 // Load in the Hero
-require '../components/_hero_contact.php';
+require './components/_hero_contact.php';
 
 
 
@@ -33,6 +33,11 @@ $package_info = [
         'description' => 'A collection of high quality ESX scripts (some are also standalone) made by okok. All scripts shown below are included in this package.',
         'price' => '65.00',
     ],
+    'pickle-package' => [
+        'title' => 'Pickle Package',
+        'description' => 'A collection of high quality ESX scripts (some are also standalone) made by okok. All scripts shown below are included in this package.',
+        'price' => '65.00',
+    ],
     // more packages as needed
 ];
 
@@ -54,16 +59,16 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
         <meta name="keywords" content="FiveM, scripts, gaming, premium scripts">
         <meta name="author" content="Thies Bergenthal">
         <!-- Tailwind CSS -->
-        <link rel="stylesheet" href="../assets/main.css">
+        <link rel="stylesheet" href="assets/main.css">
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="../assets/custom.css">
-        <link rel="stylesheet" href="../assets/hero.css">
-        <link rel="stylesheet" href="../assets/header.css">
-        <link rel="stylesheet" href="../assets/contact.css">
+        <link rel="stylesheet" href="assets/custom.css">
+        <link rel="stylesheet" href="assets/hero.css">
+        <link rel="stylesheet" href="assets/header.css">
+        <link rel="stylesheet" href="assets/contact.css">
         <!-- Favicon -->
-        <link rel="icon" sizes="16x16" type="image/png" href="../assets/images/favicon-16x16.png">
-        <link rel="icon" sizes="32x32" type="image/png" href="../assets/images/favicon-32x32.png">
-        <link rel="icon" sizes="96x96" type="image/png" href="../assets/images/favicon-96x96.png">
+        <link rel="icon" sizes="16x16" type="image/png" href="assets/images/favicon-16x16.png">
+        <link rel="icon" sizes="32x32" type="image/png" href="assets/images/favicon-32x32.png">
+        <link rel="icon" sizes="96x96" type="image/png" href="assets/images/favicon-96x96.png">
         
         <meta name="mobile-web-app-capable" content="yes">
         <meta property="og:title" content="My Script Collection">
@@ -144,7 +149,7 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
 
 <?php
 // Load in the Footer
-require '../components/_footer_contact.php';
+require './components/_footer_contact.php';
 ?>
 
 

@@ -6,13 +6,13 @@
                 <h5 class="uppercase mb-6 font-bold"><i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>Links</h5>
                 <ul class="list-none mb-6">
                     <li class="mt-2">
-                        <a href="contact_en.php" class="hover:underline text-gray-400">Contact</a>
+                        <a href="contact.php" class="hover:underline text-gray-400">Contact</a>
                     </li>
                     <li class="mt-2">
-                        <a href="about_me_en.php" class="hover:underline text-gray-400">About Me</a>
+                        <a href="faq.php" class="hover:underline text-gray-400">F.A.Q</a>
                     </li>
                     <li class="mt-2">
-                        <a href="#" class="hover:underline text-gray-400">Privacy Policy</a>
+                        <a href="legal.php" class="hover:underline text-gray-400">Privacy Policy</a>
                     </li>
                 </ul>
             </div>

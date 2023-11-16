@@ -24,6 +24,10 @@ $package_info = [
         'description' => 'A collection of high quality ESX scripts (some are also standalone) made by okok. All scripts shown below are included in this package.',
         'price' => '65.00',
     ],
+    'pickle-package' => [
+        'description' => 'A collection of high quality ESX scripts (some are also standalone) made by okok. All scripts shown below are included in this package.',
+        'price' => '65.00',
+    ],
     // more packages as needed
 ];
 
@@ -52,6 +56,7 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
             <option value="okok-package">okok Package</option>
             <option value="wasabi-package">Wasabi Package</option>
             <option value="codem-package">CodeM Package</option>
+            <option value="pickle-package">Pickle Package</option>
         </select>
     </div>
 </div>

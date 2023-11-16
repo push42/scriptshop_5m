@@ -1,7 +1,7 @@
 <?php
 // Load in the Header
-require '../components/_header.php';
-require '../components/_hero_faq.php';
+require './components/_header.php';
+require './components/_hero_faq.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,15 +14,15 @@ require '../components/_hero_faq.php';
         <meta name="keywords" content="FiveM, scripts, gaming, premium scripts">
         <meta name="author" content="Thies Bergenthal">
         <!-- Tailwind CSS -->
-        <link rel="stylesheet" href="../assets/main.css">
+        <link rel="stylesheet" href="assets/main.css">
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="../assets/custom.css">
-        <link rel="stylesheet" href="../assets/css/header.css">
-        <link rel="stylesheet" href="../assets/css/hero.css">
+        <link rel="stylesheet" href="assets/custom.css">
+        <link rel="stylesheet" href="assets/css/header.css">
+        <link rel="stylesheet" href="assets/css/hero.css">
         <!-- Favicon -->
-        <link rel="icon" sizes="16x16" type="image/png" href="../assets/images/favicon-16x16.png">
-        <link rel="icon" sizes="32x32" type="image/png" href="../assets/images/favicon-32x32.png">
-        <link rel="icon" sizes="96x96" type="image/png" href="../assets/images/favicon-96x96.png">
+        <link rel="icon" sizes="16x16" type="image/png" href="assets/images/favicon-16x16.png">
+        <link rel="icon" sizes="32x32" type="image/png" href="assets/images/favicon-32x32.png">
+        <link rel="icon" sizes="96x96" type="image/png" href="assets/images/favicon-96x96.png">
         
         <meta name="mobile-web-app-capable" content="yes">
         <meta property="og:title" content="My Script Collection">
@@ -86,7 +86,7 @@ new Vue({
 
 <?php
 // Load in the Footer
-require '../components/_footer.php';
+require './components/_footer.php';
 ?>
 
 </body>

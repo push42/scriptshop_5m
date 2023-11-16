@@ -14,21 +14,21 @@
 
         <!-- Full navigation menu for larger screens, hidden on small screens -->
         <nav class="hidden sm:flex sm:items-center sm:space-x-4">
-            <a href="index_en.php" class="text-purple-700 font-bold">My Scripts</a>
+            <a href="index.php" class="text-purple-700 font-bold">My Scripts</a>
             <a href="contact.php" class="hover:text-gray-400">Contact</a>
-            <a href="impressum_en.php" class="hover:text-gray-400">Legal Disclosure</a>
-            <a href="faq_en.php" class="hover:text-gray-400">F.A.Q</a>
-            <a href="feedback_en.php" class="hover:text-gray-400">Give Feedback</a>
+            <a href="legal.php" class="hover:text-gray-400">Legal Disclosure</a>
+            <a href="faq.php" class="hover:text-gray-400">F.A.Q</a>
+            <a href="feedback.php" class="hover:text-gray-400">Give Feedback</a>
         </nav>
     </div>
 
     <!-- Responsive nav menu, hidden on medium and larger screens, shown when hamburger is clicked -->
     <div id="mobile-menu" class="sm:hidden hidden">
-        <a href="index_en.php" class="block px-4 py-2 text-sm hover:bg-gray-800">My Scripts</a>
+        <a href="index.php" class="block px-4 py-2 text-sm hover:bg-gray-800">My Scripts</a>
         <a href="contact.php" class="block px-4 py-2 text-sm hover:bg-gray-800">Contact</a>
-        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-800">Legal Disclosure</a>
-        <a href="faq_en.php" class="block px-4 py-2 text-sm hover:bg-gray-800">F.A.Q</a>
-        <a href="feedback_en.php" class="block px-4 py-2 text-sm hover:bg-gray-800">Give Feedback</a>
+        <a href="legal.php" class="block px-4 py-2 text-sm hover:bg-gray-800">Legal Disclosure</a>
+        <a href="faq.php" class="block px-4 py-2 text-sm hover:bg-gray-800">F.A.Q</a>
+        <a href="feedback.php" class="block px-4 py-2 text-sm hover:bg-gray-800">Give Feedback</a>
     </div>
 </header>
 

@@ -2,13 +2,13 @@
 <section class="relative">
     <div class="video-container absolute inset-0 w-full h-full overflow-hidden z-0">
         <video autoplay loop muted playsinline class="max-w-full max-h-full w-full h-full object-cover">
-            <source src="../assets/images/test.mp4" type="video/mp4">
+            <source src="assets/images/test.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <!-- Telegram Chat Box -->
         <div class="discord-box hidden md:flex md:absolute md:left-8 md:top-28 bg-gradient-to-br from-zinc-950 to-black-custom border border-gray-600 text-white p-2 rounded-lg shadow-lg max-w-sm transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 z-10">
             <div class="flex-shrink-0 mr-4">
-                <img src="../assets/images/Telegram.png" alt="Telegram Logo" class="w-12 h-12 object-cover rounded-md"> <!-- Discord logo image -->
+                <img src="assets/images/Telegram.png" alt="Telegram Logo" class="w-12 h-12 object-cover rounded-md"> <!-- Discord logo image -->
             </div>
             <div class="flex-grow">
                 <p class="text-lg font-bold font-mono text-purple-400">Telegram</p>
@@ -18,7 +18,7 @@
         <!-- Discord Chat Box -->
         <div class="discord-box hidden md:flex md:absolute md:right-8 md:top-28 bg-gradient-to-br from-zinc-950 to-black-custom border border-gray-600 text-white p-2 rounded-lg shadow-lg max-w-sm transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 z-10">
             <div class="flex-shrink-0 mr-4">
-                <img src="../assets/images/blue_discord.gif" alt="Discord Logo" class="w-12 h-12 object-cover rounded-md mr-2.5"> <!-- Discord logo image -->
+                <img src="assets/images/blue_discord.gif" alt="Discord Logo" class="w-12 h-12 object-cover rounded-md mr-2.5"> <!-- Discord logo image -->
             </div>
             <div class="flex-grow">
                 <p class="text-lg font-bold font-mono text-purple-400">Discord</p>
