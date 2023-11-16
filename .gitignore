@@ -8,7 +8,7 @@
 # dist/components/
 dist/assets/images/products/
 dist/components/_productlist.php
-dist/pages/proof.php
+dist/proof.php
 
 # PHPStorm project files
 .idea/
