@@ -1,0 +1,22 @@
+.video-container {
+    max-width: 800px; /* Adjust based on preference */
+    margin: 0 auto;
+    border: 2px solid #4B5563; /* Gray border */
+    box-shadow: 0px 0px 10px #4B5563; /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures video corners are also rounded */
+}
+
+.video-player {
+    width: 100%; /* Ensures video fills container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.info-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(75, 85, 99, 0.5); /* Semi-transparent background */
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 0.9rem;
+}

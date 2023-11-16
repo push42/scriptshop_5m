@@ -1,6 +1,7 @@
 <?php
 // Load in the Header
 require '../components/_header.php';
+require '../components/_hero_faq.php';
 ?>
 <!DOCTYPE html>
 <html>
