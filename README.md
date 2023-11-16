@@ -1,9 +1,8 @@
 ⭐ ![Custom](https://img.shields.io/badge/FiveM%20Script%20Collection-8A2BE2)
 
-![Custom](https://img.shields.io/badge/still%20in-Development-red)
-![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)
-![GitHub](https://img.shields.io/github/license/push42/scriptshop_5m)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/push42/scriptshop_5m)
+![Custom](https://img.shields.io/badge/still%20in-Development-magenta)
+![Custom2](https://img.shields.io/badge/Licence-GPL%203.0%20license%20-magenta)
+![Custom2](https://img.shields.io/badge/Version-1.0.1-magenta)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/push42/scriptshop_5m)
 
 
@@ -20,7 +19,11 @@ This is a private repository for the ScriptShop 5M project, a personal collectio
 ![Preview4](https://i.ibb.co/zmJ9xkb/4.png)
 ![Preview5](https://i.ibb.co/mRLhBtw/5.png)
 
-
+1st design of the website. (outdated)
+![Custom2](https://img.shields.io/badge/old-Design-magenta)
+![Preview6](https://i.ibb.co/FBKDdqD/01.png)
+![Preview7](https://i.ibb.co/Dtrb37J/02.png)
+![Preview8](https://i.ibb.co/rs1pkYf/03.png)
 
 ## 📂 Project Structure
 
