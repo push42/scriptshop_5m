@@ -5,7 +5,6 @@ error_reporting(E_ALL);
 
 // Load composer
 require '../vendor/autoload.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +21,8 @@ require '../vendor/autoload.php';
         <link rel="stylesheet" href="assets/main.css">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/custom.css">
+        <link rel="stylesheet" href="assets/header.css">
+        <link rel="stylesheet" href="assets/hero.css">
         <!-- Favicon -->
         <link rel="icon" sizes="16x16" type="image/png" href="./assets/images/favicon-16x16.png">
         <link rel="icon" sizes="32x32" type="image/png" href="./assets/images/favicon-32x32.png">

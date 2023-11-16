@@ -4,7 +4,7 @@
 # Node dependencies
 /node_modules/
 
-# AntiSteal - Remove once project done
+# project done?
 dist/components/
 dist/assets/images/products/
 
