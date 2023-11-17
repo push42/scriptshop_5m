@@ -123,8 +123,8 @@
                 echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-solid fa-rectangle-list text-purple-400 mr-1'></i>Product ID:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['productId']) . "</span></p>";
                 echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-brands fa-discord text-purple-400 mr-1'></i>Discord ID:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['discordId']) . "</span></p>";
                 echo "<p class='text-gray-300 mt-2 mb-8 font-semibold text-sm'>" . htmlspecialchars($row['message']) . "</p>";
-                echo "<button onclick='toggleRead(\"message-".$row['id']."\")' class='text-sm text-green-600 font-mono font-semibold button-read'><i class='fa-regular fa-bookmark mr-1 text-green-600'></i>Mark as Read/Unread</button>";
-                echo "<button onclick='deleteMessage(\"message-".$row['id']."\")' class='text-sm text-red-600 font-mono font-semibold button-delete'><i class='fa-solid fa-trash mr-1 text-red-600'></i>Delete</button>";
+                echo "<button onclick='toggleRead(\"message-".$row['id']."\")' class='text-sm text-green-200 font-mono font-semibold button-read'><i class='fa-regular fa-bookmark mr-1 text-green-200'></i>Mark as Read/Unread</button>";
+                echo "<button onclick='deleteMessage(\"message-".$row['id']."\")' class='text-sm text-red-400 font-mono font-semibold button-delete'><i class='fa-solid fa-trash mr-1 text-red-400'></i>Delete</button>";
                 echo "</div>";
                 }
             } else {
