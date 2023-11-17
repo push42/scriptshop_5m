@@ -75,7 +75,7 @@
                     <div class="image-wrapper" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio Placeholder -->
                         <img src="./assets/images/products/t1ger.png" alt="T1GER Gang System" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                     </div>
-                    <div class="absolute top-4 right-4 bg-purple-700 text-white py-2 px-4 rounded-lg text-sm font-bold">20.00€</div>
+                    <div class="absolute top-4 right-4 bg-purple-700 text-white py-2 px-4 rounded-lg text-sm font-bold">15.00€</div>
                     <div class="absolute top-4 left-4 bg-zinc-950 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase">ESX</div>
                     <div class="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-sm bg-black bg-opacity-50 rounded-b-lg">
                         <h4 class="text-xl text-white font-bold mb-2">T1GER Gang System</h4>
@@ -87,7 +87,7 @@
                     <div class="image-wrapper" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio Placeholder -->
                         <img src="./assets/images/products/window.jpg" alt="Multiplayer Window Cleaner" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                     </div>
-                    <div class="absolute top-4 right-4 bg-purple-700 text-white py-2 px-4 rounded-lg text-sm font-bold">10.00€</div>
+                    <div class="absolute top-4 right-4 bg-purple-700 text-white py-2 px-4 rounded-lg text-sm font-bold">8.50€</div>
                     <div class="absolute top-4 left-4 bg-zinc-950 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase">ESX, QBCORE, Standalone</div>
                     <div class="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-sm bg-black bg-opacity-50 rounded-3xl">
                         <h4 class="text-xl text-white font-bold mb-2">Multiplayer Window Cleaner</h4>

@@ -15,6 +15,7 @@
         <!-- Full navigation menu for larger screens, hidden on small screens -->
         <nav class="hidden sm:flex sm:items-center sm:space-x-4">
             <a href="index.php" class="text-purple-700 font-bold">My Scripts</a>
+            <a href="proof.php" class="hover:text-gray-400">Proof</a>
             <a href="contact.php" class="hover:text-gray-400">Contact</a>
             <a href="legal.php" class="hover:text-gray-400">Legal Disclosure</a>
             <a href="faq.php" class="hover:text-gray-400">F.A.Q</a>
@@ -25,6 +26,7 @@
     <!-- Responsive nav menu, hidden on medium and larger screens, shown when hamburger is clicked -->
     <div id="mobile-menu" class="sm:hidden hidden">
         <a href="index.php" class="block px-4 py-2 text-sm hover:bg-gray-800">My Scripts</a>
+        <a href="proof.php" class="block px-4 py-2 text-sm hover:bg-gray-800">Proof</a>
         <a href="contact.php" class="block px-4 py-2 text-sm hover:bg-gray-800">Contact</a>
         <a href="legal.php" class="block px-4 py-2 text-sm hover:bg-gray-800">Legal Disclosure</a>
         <a href="faq.php" class="block px-4 py-2 text-sm hover:bg-gray-800">F.A.Q</a>
