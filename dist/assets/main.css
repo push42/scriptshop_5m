@@ -616,6 +616,10 @@ video {
   top: 1rem;
 }
 
+.end-0 {
+  inset-inline-end: 0px;
+}
+
 .z-0 {
   z-index: 0;
 }

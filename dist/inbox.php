@@ -41,10 +41,10 @@
         border-radius: 10px;
         padding: 20px;
         margin-bottom: 20px;
-        min-height: 250px; /* Set a minimum height for consistency */
-        display: flex;
+        min-height: 150px; /* Set a minimum height for consistency */
+        display:inline-flex;
         flex-direction: column;
-        justify-content: space-between; /* This will push the buttons to the bottom */
+        /* justify-content: space-between; */
     }
     .message-card:hover {
         background-color: #1b111f;
@@ -68,13 +68,22 @@
         align-items: center;
         justify-content: center;
     }
+    .button-read {
+        position: absolute;
+        bottom: 9px;
+    }
+    .button-delete {
+        position: absolute;
+        bottom: 9px;
+        right: 22.5px;
+    }
 </style>
 
 </head>
 <body class="bg-zinc-950 text-white font-sans">
 
 <div class="container mx-auto px-4 py-8">
-    <h2 class="text-3xl font-bold text-center mb-8 text-purple-600">Inbox</h2>
+    <h2 class="text-3xl font-bold text-center mb-8 text-gray-100"><i class="fa-solid fa-envelope-open-text mr-2"></i>Inbox</h2>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         <?php
         include '../config/config.php';
@@ -94,19 +103,23 @@
             $submittedDate = explode(" ", $row['submitted_at'])[0];
             $isNew = ($submittedDate === $currentDate);
 
+            // Messages limited length
+            $fullMessage = htmlspecialchars($row['message']);
+            $shortMessage = strlen($fullMessage) > 100 ? substr($fullMessage, 0, 100) . "..." : $fullMessage; // Adjust 100 to your preferred words
+
                 echo "<div class='message-card p-4 rounded-lg border border-gray-700 hover:shadow-md bg-black-custom' id='message-".$row['id']."'>";
                 if ($isNew) {
                     echo "<div class='new-badge'>NEW</div>";
                 }
                 echo "<h3 class='text-lg font-semibold text-purple-600'>" . htmlspecialchars($row['fullName']) . " <span class='text-xs text-gray-400'>- " . htmlspecialchars($row['submitted_at']) . "</span></h3>";
-                echo "<a href='mailto:" . htmlspecialchars($row['email']) . "' class='text-gray-300 font-mono'>" . htmlspecialchars($row['email']) . "</a>";
-                echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-solid fa-box-open text-purple-400'></i> Package: " . htmlspecialchars($row['productPackage']) . "</p>";
-                echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-solid fa-circle-user text-purple-400'></i> CFX Username: " . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['cfxUsername']) . "</span></p>";
-                echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-solid fa-rectangle-list text-purple-400'></i> Product ID: " . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['productId']) . "</span></p>";
-                echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-brands fa-discord text-purple-400'></i> Discord ID: " . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['discordId']) . "</span></p>";
-                echo "<p class='text-gray-300 mt-2 mb-4'>" . htmlspecialchars($row['message']) . "</p>";
-                echo "<button onclick='toggleRead(\"message-".$row['id']."\")' class='text-sm text-gray-300'><i class='fa-regular fa-bookmark mr-1 text-purple-600'></i> Mark as Read/Unread</button>";
-                echo "<button onclick='deleteMessage(\"message-".$row['id']."\")' class='text-sm text-gray-300 ml-2'><i class='fa-solid fa-trash mr-1 text-red-600'></i> Delete</button>";
+                echo "<a href='mailto:" . htmlspecialchars($row['email']) . "' class='text-gray-300 font-mono mb-2'>" . htmlspecialchars($row['email']) . "</a>";
+                echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-solid fa-box-open text-purple-400 mr-1'></i>Package:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['productPackage']) . "</span></p>";
+                echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-regular fa-address-card text-purple-400 mr-1'></i>CFX Username:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['cfxUsername']) . "</span></p>";
+                echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-solid fa-rectangle-list text-purple-400 mr-1'></i>Product ID:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['productId']) . "</span></p>";
+                echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-brands fa-discord text-purple-400 mr-1'></i>Discord ID:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['discordId']) . "</span></p>";
+                echo "<p class='text-gray-300 mt-2 mb-8 font-semibold text-sm'>" . htmlspecialchars($row['message']) . "</p>";
+                echo "<button onclick='toggleRead(\"message-".$row['id']."\")' class='text-sm text-gray-300 button-read'><i class='fa-regular fa-bookmark mr-1 text-purple-600'></i> Mark as Read/Unread</button>";
+                echo "<button onclick='deleteMessage(\"message-".$row['id']."\")' class='text-sm text-gray-300 button-delete'><i class='fa-solid fa-trash mr-1 text-red-600'></i> Delete</button>";
                 echo "</div>";
             }
         } else {
@@ -122,7 +135,17 @@
 <script>
     function toggleRead(messageId) {
         var element = document.getElementById(messageId);
+        var newBadge = element.querySelector('.new-badge'); // Find the NEW badge inside the message card
+
         element.classList.toggle('read');
+
+        // If the message is marked as read, hide the NEW badge
+        if (element.classList.contains('read')) {
+            if (newBadge) newBadge.style.display = 'none';
+        } else {
+            // Show the NEW badge again when unmarked
+            if (newBadge) newBadge.style.display = 'flex';
+        }
     }
 
     function deleteMessage(messageId) {
