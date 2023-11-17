@@ -6,7 +6,7 @@
 
 # project done?
 # dist/components/
-dist/assets/images/products/
+dist/assets/images/products/proof/
 dist/components/_productlist.php
 dist/proof.php
 
@@ -46,9 +46,9 @@ Thumbs.db
 nbproject
 
 # Exported databases
-*.sql
-*.sql.gz
-*.sqlite
+# *.sql
+# *.sql.gz
+# *.sqlite
 
 # Build directory
 /build/
