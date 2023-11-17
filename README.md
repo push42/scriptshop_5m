@@ -11,7 +11,7 @@
 The website currently only is client-side, i will add a database and more soon.
 There isn't a way to purchase directly on this website. It acts like a portfolio where i personally display my bought scripts to resell them.
 I stopped having interest in GTA Roleplay and no longer develop for FiveM.
-This is a private repository for the ScriptShop 5M project, a personal collection of scripts and utilities designed for use with the FiveM mod for Grand Theft Auto V.
+Feel free to modify my website, use it for yourself, i really don't care^^
 
 # 🔎 Preview
 - from 14.11.2023 / 00:27 - may have changed already
