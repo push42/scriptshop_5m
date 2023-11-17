@@ -1,14 +1,10 @@
-<?php
-// Load in the Header
-require './components/_header.php';
-?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Proof - My Script Collection</title>
+        <title>Impressum</title>
         <meta name="description" content="Explore a collection of my scripts for FiveM. Purchase premium scripts for a bit less.">
         <meta name="keywords" content="FiveM, scripts, gaming, premium scripts">
         <meta name="author" content="Thies Bergenthal">
@@ -37,27 +33,66 @@ require './components/_header.php';
         <link rel="canonical" href="https://www.thiesbergenthal.de">
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/9d1f4cdd15.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 
     </head>
+<body class="bg-zinc-950 font-sans text-white">
 
-    <body class="bg-zinc-950 font-sans">
-        <div class="container mx-auto text-center py-12">
-            <h2 class="text-3xl font-bold text-white mb-6 uppercase">Proof of Script Ownership<span class="text-purple-600">.</span></h2>
-            <div class="video-container mx-auto">
-                <video controls autoplay muted class="video-player">
-                    <source src="assets/images/products/proof/proof_video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="info-box mt-4 p-4 border border-gray-700 rounded-lg text-white font-semibold text-lg bg-zinc-900">
-                <p>If you need further proof such as screen sharing or any other form of verification before purchase, please feel free to contact me. I am also happy to provide emails from the purchases as additional proof. As you can see from the video, some scripts are not yet listed on the website. This is because it takes time to add all the content. However, if a particular script caught your attention, please don't hesitate to ask me about it. Feel free to propose your offer for any script you're interested in.</p>
+<div id="app">
+    <?php require './components/_header.php'; ?>
+
+    <!-- Legal Disclosure Section -->
+    <section class="py-2">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">Legal Disclosure / Impressum<span class="text-purple-700">.</span></h2>
+            <div class="bg-zinc-900 rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-4">Information in accordance with Section 5 TMG</h3>
+                <p>{{ companyName }}</p>
+                <p>{{ address }}</p>
+                <p>{{ contactInfo }}</p>
             </div>
         </div>
+    </section>
 
+    <!-- Disclaimer Section -->
+    <section class="py-2">
+        <div class="container mx-auto px-4">
+            <div class="rounded-lg p-6 bg-zinc-900">
+                <h3 class="text-xl font-semibold mb-4">Disclaimer</h3>
+                <p>{{ disclaimerContent }}</p>
+            </div>
+        </div>
+    </section>
 
-        <?php
-        // Load in the Footer
-        require './components/_footer.php';
-        ?>
-    </body>
+    <!-- Disclaimer Section -->
+    <section class="py-2">
+        <div class="container mx-auto px-4">
+            <div class="rounded-lg p-6 bg-zinc-900">
+                <h3 class="text-xl font-semibold mb-4">Disclaimer</h3>
+                <p>{{ disclaimerContent }}</p>
+            </div>
+        </div>
+    </section>
+
+    <?php require './components/_footer.php'; ?>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            companyName: '[Your Name/Company Name]',
+            address: '[Address]',
+            contactInfo: '[Postal Code, City, Country]',
+            phone: '[Your Phone Number]',
+            email: 'your-email@example.com',
+            website: 'www.yourwebsite.com',
+            registrationInfo: '[Registration Details]',
+            vatId: '[VAT ID]',
+            disclaimerContent: '[Disclaimer Text]'
+            // ... [other dynamic data] ...
+        }
+    });
+</script>
+</body>
 </html>

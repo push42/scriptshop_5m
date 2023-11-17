@@ -2,24 +2,27 @@
 
 ?>
 
-<!-- Header Section -->
-<header class="bg-zinc-950 text-white py-4 relative">
+<!-- Improved Header Section -->
+<header class="bg-zinc-950 text-gray-100 py-5 relative">
     <div class="container mx-auto flex items-center justify-between">
-        <!-- Branding and Hamburger Menu -->
-        <a href="#" class="text-xl font-bold ml-4">FiveM Scripts</a>
-        <!-- Hamburger menu button only visible on small screens -->
-        <button id="menu-toggle" class="sm:hidden text-xl focus:outline-none focus:shadow-outline mr-4">
+        <!-- Branding -->
+        <a href="#" class="text-2xl font-semibold ml-4 flex items-center">
+            <i class="fas fa-code mr-2"></i> FiveM Scripts
+        </a>
+
+        <!-- Hamburger Menu Button (Small Screens) -->
+        <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none focus:ring focus:ring-purple-500 mr-4">
             <i class="fas fa-bars"></i>
         </button>
 
-        <!-- Full navigation menu for larger screens, hidden on small screens -->
-        <nav class="hidden sm:flex sm:items-center sm:space-x-4">
-            <a href="index.php" class="text-purple-700 font-bold">My Scripts</a>
-            <a href="proof.php" class="hover:text-gray-400">Proof</a>
-            <a href="contact.php" class="hover:text-gray-400">Contact</a>
-            <a href="legal.php" class="hover:text-gray-400">Legal Disclosure</a>
-            <a href="faq.php" class="hover:text-gray-400">F.A.Q</a>
-            <a href="feedback.php" class="hover:text-gray-400">Give Feedback</a>
+        <!-- Navigation Menu (Large Screens) -->
+        <nav class="hidden md:flex md:items-center md:gap-6">
+            <a href="index.php" class="text-lg text-purple-600 hover:text-purple-400 font-medium">My Scripts</a>
+            <a href="proof.php" class="hover:text-gray-300">Proof</a>
+            <a href="contact.php" class="hover:text-gray-300">Contact</a>
+            <a href="legal.php" class="hover:text-gray-300">Legal Disclosure</a>
+            <a href="faq.php" class="hover:text-gray-300">F.A.Q</a>
+            <a href="feedback.php" class="hover:text-gray-300">Give Feedback</a>
         </nav>
     </div>
 
