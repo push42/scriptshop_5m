@@ -80,10 +80,16 @@
 </style>
 
 </head>
-<body class="bg-zinc-950 text-white font-sans">
 
+
+<body class="bg-zinc-950 text-white font-sans">
 <div class="container mx-auto px-4 py-8">
+
+
     <h2 class="text-3xl font-bold text-center mb-8 text-gray-100"><i class="fa-solid fa-envelope-open-text mr-2"></i>Inbox</h2>
+
+
+    <!-- Inbox messages -->
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         <?php
         include '../config/config.php';
@@ -103,16 +109,13 @@
             $submittedDate = explode(" ", $row['submitted_at'])[0];
             $isNew = ($submittedDate === $currentDate);
 
-            // Messages limited length
-            $fullMessage = htmlspecialchars($row['message']);
-            $shortMessage = strlen($fullMessage) > 100 ? substr($fullMessage, 0, 100) . "..." : $fullMessage; // Adjust 100 to your preferred words
 
                 echo "<div class='message-card p-4 rounded-lg border border-gray-700 hover:shadow-md bg-black-custom' id='message-".$row['id']."'>";
                 if ($isNew) {
                     echo "<div class='new-badge'>NEW</div>";
                 }
-                echo "<h3 class='text-lg font-semibold text-purple-600'>" . htmlspecialchars($row['fullName']) . " <span class='text-xs text-gray-400'>- " . htmlspecialchars($row['submitted_at']) . "</span></h3>";
-                echo "<a href='mailto:" . htmlspecialchars($row['email']) . "' class='text-gray-300 font-mono mb-2'>" . htmlspecialchars($row['email']) . "</a>";
+                echo "<h3 class='text-lg font-semibold text-purple-600'>" . htmlspecialchars($row['fullName']) . " <span class='text-xs text-gray-400 date'>- " . htmlspecialchars($row['submitted_at']) . "</span></h3>";
+                echo "<p class='text-gray-300 font-mono mb-2'>" . htmlspecialchars($row['email']) . "</p>";
                 echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-solid fa-box-open text-purple-400 mr-1'></i>Package:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['productPackage']) . "</span></p>";
                 echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-regular fa-address-card text-purple-400 mr-1'></i>CFX Username:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['cfxUsername']) . "</span></p>";
                 echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-solid fa-rectangle-list text-purple-400 mr-1'></i>Product ID:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['productId']) . "</span></p>";
@@ -147,6 +150,7 @@
             if (newBadge) newBadge.style.display = 'flex';
         }
     }
+
 
     function deleteMessage(messageId) {
         var confirmed = confirm("Are you sure you want to delete this message?");
