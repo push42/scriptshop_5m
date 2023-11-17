@@ -8,8 +8,10 @@
 
 # 💜 Project 1211: ScriptShop 5M
 
-The website currently only is client-side, i will add a database and more soon
-This is a private repository for the ScriptShop 5M project, a personal collection of scripts and utilities designed for use with the FiveM mod for Grand Theft Auto V.
+There isn't a way to purchase directly on this website. It acts like a portfolio where i personally display my bought scripts to resell them.
+I stopped having interest in GTA Roleplay and no longer develop for FiveM.
+Feel free to modify my website or use it for yourself (ofcourse with your edited information), i really don't bother.
+The contact form uses a database to save the send contact messages.
 
 # 🔎 Preview
 - from 14.11.2023 / 00:27 - may have changed already
