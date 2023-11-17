@@ -41,6 +41,10 @@ require './components/_header.php';
     </head>
 
     <body class="bg-zinc-950 font-sans">
+    <video autoplay loop muted playsinline id="background-video" class="min-w-full min-h-full fixed opacity-40">
+        <source src="./assets/images/test.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
         <div class="container mx-auto text-center py-12">
             <h2 class="text-3xl font-bold text-white mb-6 uppercase">Proof of Script Ownership<span class="text-purple-600">.</span></h2>
             <div class="video-container mx-auto">
@@ -49,7 +53,7 @@ require './components/_header.php';
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="info-box mt-4 p-4 border border-gray-700 rounded-lg text-white font-semibold text-lg bg-zinc-900">
+            <div class="info-box mt-4 p-8 border border-gray-700 rounded-lg text-white font-semibold text-lg bg-zinc-900">
                 <p>If you need further proof such as screen sharing or any other form of verification before purchase, please feel free to contact me. I am also happy to provide emails from the purchases as additional proof. As you can see from the video, some scripts are not yet listed on the website. This is because it takes time to add all the content. However, if a particular script caught your attention, please don't hesitate to ask me about it. Feel free to propose your offer for any script you're interested in.</p>
             </div>
         </div>

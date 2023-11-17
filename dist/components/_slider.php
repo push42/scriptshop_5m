@@ -39,7 +39,7 @@
                     <div class="image-wrapper" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio Placeholder -->
                         <img src="./assets/images/products/drug-creater.jpeg" alt="Advanced Drugs Creator" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                     </div>
-                    <div class="absolute top-4 right-4 bg-purple-700 text-white py-2 px-4 rounded-lg text-sm font-bold">15.00€</div>
+                    <div class="absolute top-4 right-4 bg-purple-700 text-white py-2 px-4 rounded-lg text-sm font-bold">10.00€</div>
                     <div class="absolute top-4 left-4 bg-zinc-950 text-white py-1 px-2 rounded-lg text-xs font-bold uppercase">ESX</div>
                     <div class="absolute bottom-0 left-0 right-0 p-4 backdrop-blur-sm bg-black bg-opacity-50 rounded-b-lg">
                         <h4 class="text-xl text-white font-bold mb-2">Advanced Drugs Creator</h4>
@@ -94,12 +94,12 @@
                         <p class="text-white">Popular multiplayer window cleaner job script.</p>
                     </div>
                 </div>
-                <!-- If we need pagination -->
+                <!-- If we need pagination
                 <div class="swiper-pagination"></div>
                 
-                <!-- If we need navigation buttons -->
+                If we need navigation buttons
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-next"></div> -->
             </div>
         </div>
     </div>
@@ -120,7 +120,7 @@
     spaceBetween: 30,
     loop: true,
     autoplay: {
-      delay: 5500, // Delay in milliseconds before the next slide is shown
+      delay: 3500, // Delay in milliseconds before the next slide is shown
       disableOnInteraction: false, // Autoplay will not be disabled after user interactions
     },
     pagination: {

@@ -91,7 +91,7 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
     <section class="py-12">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center">Contact Form<span class="text-purple-700">.</span></h2>
-            <p class="text-sm font-sans font-semibold text-center mb-6">This is a subheader</p>
+            <p class="text-sm font-sans font-semibold text-center mb-6">Want to get in touch with me? You can use this form or contact me trough one of my social profiles.</p>
             <form action="/path-to-your-form-handler" method="post" class="max-w-4xl mx-auto bg-zinc-900 rounded-lg p-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 

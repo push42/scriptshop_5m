@@ -8,7 +8,8 @@ $products = array_map(function($product, $index) {
     return $product;
 }, $products, array_keys($products));
 
-
+// Total Products
+$totalProducts = count($products);
 
 // array for package information
 $package_info = [
@@ -67,7 +68,6 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
     <p id="packageDescription" class="text-lg text-gray-200"></p>
     <p id="packagePrice" class="text-xl text-purple-600"></p>
 </div>
-
 
 
 <!-- Product Display Section -->
