@@ -58,3 +58,16 @@
         </p>
     </div>
 </footer>
+
+
+
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('push42', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Buy a Coffee',
+    'floating-chat.donateButton.background-color': '#323842',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>

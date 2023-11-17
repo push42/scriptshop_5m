@@ -91,23 +91,25 @@
 
     <!-- Inbox messages -->
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <?php
-        include '../config/config.php';
+            <?php
+            include '../config/config.php';
 
-        $conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
+            try {
+                // Create PDO connection
+                $pdo = new PDO("mysql:host=$DB_HOST;dbname=$DB_NAME", $DB_USER, $DB_PASS);
+                $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $sql = "SELECT id, fullName, email, message, submitted_at, productPackage, cfxUsername, productId, discordId FROM contact_messages ORDER BY submitted_at DESC";
-        $result = $conn->query($sql);
+                // Prepare SQL statement
+                $stmt = $pdo->prepare("SELECT id, fullName, email, message, submitted_at, productPackage, cfxUsername, productId, discordId FROM contact_messages ORDER BY submitted_at DESC");
+                $stmt->execute();
 
-        $currentDate = date("Y-m-d");
+                // Fetch results
+                $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            $submittedDate = explode(" ", $row['submitted_at'])[0];
-            $isNew = ($submittedDate === $currentDate);
+                if (count($results) > 0) {
+                    foreach ($results as $row) {
+                        $submittedDate = explode(" ", $row['submitted_at'])[0];
+                        $isNew = ($submittedDate === date("Y-m-d"));
 
 
                 echo "<div class='message-card p-4 rounded-lg border border-gray-700 hover:shadow-md bg-black-custom' id='message-".$row['id']."'>";
@@ -124,12 +126,16 @@
                 echo "<button onclick='toggleRead(\"message-".$row['id']."\")' class='text-sm text-gray-300 button-read'><i class='fa-regular fa-bookmark mr-1 text-purple-600'></i> Mark as Read/Unread</button>";
                 echo "<button onclick='deleteMessage(\"message-".$row['id']."\")' class='text-sm text-gray-300 button-delete'><i class='fa-solid fa-trash mr-1 text-red-600'></i> Delete</button>";
                 echo "</div>";
+                }
+            } else {
+                echo "<p class='text-center text-gray-400'>No messages found.</p>";
             }
-        } else {
-            echo "<p class='text-center text-gray-400'>No messages found.</p>";
-        } 
+        } catch (PDOException $e) {
+            die("Connection failed: " . $e->getMessage());
+        }
 
-        $conn->close();
+        // Close connection
+        $pdo = null;
         ?>
     </div>
 </div>
