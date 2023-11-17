@@ -42,8 +42,8 @@ require './components/_header.php';
 
 <body class="bg-zinc-950 text-white">
 
-<div class="flex items-center justify-center h-screen">
-    <div class="text-center mt-8 mb-4">
+<div class="flex items-center justify-center h-2/3">
+    <div class="text-center">
         <?php if (isset($_GET['status']) && $_GET['status'] == 'success'): ?>
             <h1 class="text-3xl font-bold text-green-400 mb-4">Thank You!</h1>
             <p class="text-lg">Your message has been sent successfully. We will get back to you soon.</p>
