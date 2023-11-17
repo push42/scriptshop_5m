@@ -50,11 +50,11 @@
         <div class="container mx-auto text-center">
             <h1 class="text-4xl font-black mt-8 hero-title uppercase">My Script Collection<span class="text-purple-400">.</span></h1>
             <p class="mt-4 text-xl hero-subtitle font-sans text-gray-100">Elevate your FiveM project with top-tier scripts at a discount.</p>
-            <a href="contact_en.php"
+            <a href="contact.php"
                 class="mt-8 mr-4 inline-block px-4 py-2 bg-purple-900 text-white rounded-3xl hover:bg-purple-200 hover:text-black transition text-l font-bold contact-button"><i class="fa-solid fa-comments mr-2"></i>Contact Me
             </a>
-            <a href="about_me_en.php"
-                class="mt-8 ml-4 inline-block px-4 py-2 bg-purple-900 text-white rounded-3xl hover:bg-purple-200 hover:text-black transition text-l font-bold about-me-button"><i class="fa-regular fa-face-smile mr-2"></i>About Me
+            <a href="faq.php"
+                class="mt-8 ml-4 inline-block px-4 py-2 bg-purple-900 text-white rounded-3xl hover:bg-purple-200 hover:text-black transition text-l font-bold about-me-button"><i class="fa-regular fa-face-smile mr-2"></i>F.A.Q
             </a>
         </div>
     </div>
