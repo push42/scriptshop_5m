@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>FiveM - My Script Collection</title>
+        <title>Inbox</title>
         <meta name="description" content="Explore a collection of my scripts for FiveM. Purchase premium scripts for a bit less.">
         <meta name="keywords" content="FiveM, scripts, gaming, premium scripts">
         <meta name="author" content="Thies Bergenthal">
@@ -94,6 +94,8 @@
             <?php
             include '../config/config.php';
 
+            $newMessageCount = 0; // Initialize a counter for new messages
+
             try {
                 // Create PDO connection
                 $pdo = new PDO("mysql:host=$DB_HOST;dbname=$DB_NAME", $DB_USER, $DB_PASS);
@@ -110,6 +112,7 @@
                     foreach ($results as $row) {
                         $submittedDate = explode(" ", $row['submitted_at'])[0];
                         $isNew = ($submittedDate === date("Y-m-d"));
+                        $newMessageCount++; // Increment the counter for each new message
 
 
                 echo "<div class='message-card p-4 rounded-lg border border-gray-700 hover:shadow-md bg-black-custom' id='message-".$row['id']."'>";
@@ -123,7 +126,6 @@
                 echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-solid fa-rectangle-list text-purple-400 mr-1'></i>Product ID:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['productId']) . "</span></p>";
                 echo "<p class='text-xs text-gray-300 font-mono'><i class='fa-brands fa-discord text-purple-400 mr-1'></i>Discord ID:" . " <span class='text-xs text-purple-400'>" . htmlspecialchars($row['discordId']) . "</span></p>";
                 echo "<p class='text-gray-300 mt-2 mb-8 font-semibold text-sm'>" . htmlspecialchars($row['message']) . "</p>";
-                echo "<button onclick='toggleRead(\"message-".$row['id']."\")' class='text-sm text-green-200 font-mono font-semibold button-read'><i class='fa-regular fa-bookmark mr-1 text-green-200'></i>Mark as Read/Unread</button>";
                 echo "<button onclick='deleteMessage(\"message-".$row['id']."\")' class='text-sm text-red-400 font-mono font-semibold button-delete'><i class='fa-solid fa-trash mr-1 text-red-400'></i>Delete</button>";
                 echo "</div>";
                 }
@@ -138,26 +140,19 @@
         $pdo = null;
         ?>
     </div>
+
+        <!-- Welcome Box -->
+        <div class="welcome-box fixed top-0 right-0 m-4 p-2 bg-purple-600 text-white rounded-lg shadow-lg items-center grid z-10">
+            <span>Welcome back, <strong>Push42</strong>.</span>
+            
+            <?php if ($newMessageCount > 0): ?>
+                <span class="font-mono text-sm">You have <?php echo $newMessageCount; ?> new messages.</span>
+            <?php endif; ?>
+        </div>
 </div>
 
 
 <script>
-    function toggleRead(messageId) {
-        var element = document.getElementById(messageId);
-        var newBadge = element.querySelector('.new-badge'); // Find the NEW badge inside the message card
-
-        element.classList.toggle('read');
-
-        // If the message is marked as read, hide the NEW badge
-        if (element.classList.contains('read')) {
-            if (newBadge) newBadge.style.display = 'none';
-        } else {
-            // Show the NEW badge again when unmarked
-            if (newBadge) newBadge.style.display = 'flex';
-        }
-    }
-
-
     function deleteMessage(messageId) {
         var confirmed = confirm("Are you sure you want to delete this message?");
         if (!confirmed) {

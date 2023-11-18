@@ -9,7 +9,7 @@ require './components/_hero_faq.php';
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>F.A.Q - My Script Collection</title>
+        <title>F.A.Q</title>
         <meta name="description" content="Explore a collection of my scripts for FiveM. Purchase premium scripts for a bit less.">
         <meta name="keywords" content="FiveM, scripts, gaming, premium scripts">
         <meta name="author" content="Thies Bergenthal">
