@@ -5,6 +5,7 @@ error_reporting(E_ALL);
 
 // Load composer
 require '../vendor/autoload.php';
+include_once 'functions/logging.php';
 ?>
 
 <!DOCTYPE html>

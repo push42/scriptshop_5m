@@ -22,7 +22,6 @@
             <a href="contact.php" class="hover:text-gray-300">Contact</a>
             <a href="legal.php" class="hover:text-gray-300">Legal Disclosure</a>
             <a href="faq.php" class="hover:text-gray-300">F.A.Q</a>
-            <a href="feedback.php" class="hover:text-gray-300">Give Feedback</a>
         </nav>
     </div>
 
@@ -33,7 +32,6 @@
         <a href="contact.php" class="block px-4 py-2 text-sm hover:bg-gray-800">Contact</a>
         <a href="legal.php" class="block px-4 py-2 text-sm hover:bg-gray-800">Legal Disclosure</a>
         <a href="faq.php" class="block px-4 py-2 text-sm hover:bg-gray-800">F.A.Q</a>
-        <a href="feedback.php" class="block px-4 py-2 text-sm hover:bg-gray-800">Give Feedback</a>
     </div>
 </header>
 

@@ -4,27 +4,24 @@ include '../../config/config.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['messageId'])) {
     $messageId = $_POST['messageId'];
 
-    $conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    try {
+        // Create a new PDO connection
+        $pdo = new PDO("mysql:host=$DB_HOST;dbname=$DB_NAME", $DB_USER, $DB_PASS);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "DELETE FROM contact_messages WHERE id = ?";
-    
-    if ($stmt = $conn->prepare($sql)) {
-        $stmt->bind_param("i", $messageId); // "i" indicates the type is "integer"
-        $stmt->execute();
-        if ($stmt->affected_rows > 0) {
+        // Prepare and execute the DELETE statement
+        $stmt = $pdo->prepare("DELETE FROM contact_messages WHERE id = ?");
+        $stmt->execute([$messageId]);
+
+        if ($stmt->rowCount() > 0) {
             echo "Message deleted successfully.";
         } else {
             echo "No message found with that ID.";
         }
-        $stmt->close();
-    } else {
-        echo "Error: " . $conn->error;
+    } catch (PDOException $e) {
+        // Handle any errors
+        echo "Error: " . $e->getMessage();
     }
-
-    $conn->close();
 } else {
     echo "Invalid request";
 }

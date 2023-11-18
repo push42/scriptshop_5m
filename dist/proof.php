@@ -41,10 +41,6 @@ require './components/_header.php';
     </head>
 
     <body class="bg-zinc-950 font-sans">
-    <video autoplay loop muted playsinline id="background-video" class="min-w-full min-h-full fixed opacity-40">
-        <source src="./assets/images/test.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
         <div class="container mx-auto text-center py-12">
             <h2 class="text-3xl font-bold text-white mb-6 uppercase">Proof of Script Ownership<span class="text-purple-600">.</span></h2>
             <div class="video-container mx-auto">

@@ -70,6 +70,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- password for admin account is "password"
 -- Exportiere Daten aus Tabelle project_1211.users: ~1 rows (ungefähr)
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `avatar`, `created_at`) VALUES
 	(3, 'admin', '$2y$10$2ANrctXrK4kUqAY9qH0BIuQdoTGYYOF0kgEAryQG.3aiH7cw7ypgW', 'test@test.de', 'uploads/6558088461103-4627-hisoka-uno-reverse.png', '2023-11-18 00:42:44');

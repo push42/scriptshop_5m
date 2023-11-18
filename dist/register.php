@@ -81,21 +81,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container mx-auto px-4">
         <h2 class="text-white text-3xl font-bold text-center my-10">Create Your Account</h2>
         <form action="register.php" method="post" enctype="multipart/form-data" class="max-w-md mx-auto bg-zinc-900 p-8 rounded shadow">
-            <div class="mb-4">
-                <label class="block text-gray-200 text-sm font-bold mb-2" for="username">Username</label>
-                <input type="text" id="username" name="username" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight">
+            <div class="w-full mb-4">
+                <input class="w-full px-4 py-2 bg-zinc-700 text-white border rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="text" name="username" placeholder="Username" required>
             </div>
-            <div class="mb-4">
-                <label class="block text-gray-200 text-sm font-bold mb-2" for="password">Password</label>
-                <input type="password" id="password" name="password" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight">
+            <div class="w-full mb-4">
+                <input class="w-full px-4 py-2 bg-zinc-700 text-white border rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="password" name="password" placeholder="Password" required>
             </div>
-            <div class="mb-4">
-                <label class="block text-gray-200 text-sm font-bold mb-2" for="email">Email</label>
-                <input type="email" id="email" name="email" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight">
+            <div class="w-full mb-4">
+                <input class="w-full px-4 py-2 bg-zinc-700 text-white border rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="email" name="email" placeholder="Email" required>
             </div>
-            <div class="mb-4">
-                <label class="block text-gray-200 text-sm font-bold mb-2" for="avatar">Avatar (Max 8MB)</label>
-                <input type="file" id="avatar" name="avatar" accept="image/*" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight">
+            <div class="w-full mb-4">
+                <input class="w-full px-4 py-2 bg-zinc-700 text-white border rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="file" name="avatar" accept="image/*">
             </div>
             <div class="flex items-center justify-between">
                 <button type="submit" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">

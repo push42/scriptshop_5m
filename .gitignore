@@ -9,6 +9,8 @@
 dist/assets/images/products/proof/
 dist/components/_productlist.php
 dist/proof.php
+dist/user_logs.txt
+dist/functions/logging.php
 
 # PHPStorm project files
 .idea/
