@@ -102,7 +102,7 @@ require './components/_footer.php';
 
                     // Find the accept button in the cookie consent banner
                     // Note: The selector might change depending on the actual structure of the banner
-                    var acceptButton = document.querySelector('.cookie-consent-accept-button'); // Update this selector based on your actual button
+                    var acceptButton = document.querySelector('.cc-nb-okagree'); // Update this selector based on your actual button
 
                     // Attach event listener to the accept button
                     if (acceptButton) {
@@ -114,7 +114,7 @@ require './components/_footer.php';
 
                 // Function to trigger logging.php
                 function triggerLogging() {
-                    fetch('functions/logging.php', {
+                    fetch('./functions/logging.php', {
                         method: 'GET',
                         credentials: 'same-origin'
                     })
