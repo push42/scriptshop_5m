@@ -61,7 +61,7 @@
 
 
 
-
+<!-- Ko-Fi Section -->
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <script>
   kofiWidgetOverlay.draw('push42', {

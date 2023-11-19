@@ -1,5 +1,8 @@
 <?php
 include '../config/config.php';
+// Load in the Header
+require './components/_header.php';
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Validate and sanitize input
@@ -78,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 <body class="bg-zinc-950">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 mb-40">
         <h2 class="text-white text-3xl font-bold text-center my-10">Create Your Account</h2>
         <form action="register.php" method="post" enctype="multipart/form-data" class="max-w-md mx-auto bg-zinc-900 p-8 rounded shadow">
             <div class="w-full mb-4">
@@ -102,3 +105,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </body>
 </html>
+
+<?php
+// Load in the Header
+require './components/_footer.php';
+
+?>
