@@ -65,14 +65,14 @@ new Vue({
     data: {
         activeIndex: null,
         faqItems: [
-            { question: 'How do I purchase a script?', answer: 'You can purchase scripts by contacting me directly through Discord or Telegram.' },
-            { question: 'What payment methods are accepted?', answer: 'We accept PayPal, Amazon, and direct bank transfers.' },
-            { question: 'Question 3?', answer: 'We accept PayPal, Amazon, and direct bank transfers.' },
-            { question: 'Question 4?', answer: 'We accept PayPal, Amazon, and direct bank transfers.' },
-            { question: 'Question 5?', answer: 'We accept PayPal, Amazon, and direct bank transfers.' },
-            { question: 'What payment methods are accepted?', answer: 'We accept PayPal, Amazon, and direct bank transfers.' },
-            { question: 'What payment methods are accepted?', answer: 'We accept PayPal, Amazon, and direct bank transfers.' },
-            { question: 'What payment methods are accepted?', answer: 'We accept PayPal, Amazon, and direct bank transfers.' },
+            { question: 'How do I purchase a script?', answer: 'You can purchase scripts by contacting me directly through Discord, Telegram or the Contact form.' },
+            { question: 'What payment methods do you accept?', answer: 'I only accept PayPal (Friends), Amazon or direct bank transfers.' },
+            { question: 'Can I get a refund if Im not satisfied with a script?', answer: 'No. Scripts are only able to be transferred once so no refund possible.' },
+            { question: 'Are your scripts compatible with the latest version of FiveM?', answer: 'Yes.' },
+            { question: 'Can I preview a script before purchasing?', answer: 'Yes, some stores got a showcase-server for their scripts. I could also setup a server with the preferred script to show it works beforehand if needed.' },
+            { question: 'Do I receive updates for a script I purchased?', answer: 'Yes. Your script inside the CFX-Keymaster libary automatically recieves updates from the developer.' },
+            { question: 'What server requirements are needed for your scripts?', answer: 'Our Server did run on ESX, however many scripts are compatible with more frameworks, take a look at the Tags on the scripts page.' },
+            { question: 'How do i get the scripts?', answer: 'You need to have a CFX-Keymaster account, they will get transferred to you there, transferring the ownership to you (this is also where you will get notified about updates from scripts you own & can download them). You will also get the TEBEX-ID from my original purchase if you need to provide it for seeking support in their discord.' },
             // ... more questions ...
         ]
     },

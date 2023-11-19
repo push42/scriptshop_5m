@@ -56,8 +56,8 @@ require './components/_header.php';
             <!-- Description Section -->
             <div class="bg-zinc-800 p-6 rounded-lg shadow-lg text-center">
                 <h1 class="text-4xl font-bold mb-6 text-center text-purple-600">Script Ownership Proof</h1>
-                <p class="text-lg mb-4">Need more proof? We're ready to provide screen sharing or any other form of verification. Authenticity is our priority. Reach out for detailed inquiries or specific script information.</p>
-                <a href="contact.php" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">Contact Us</a>
+                <p class="text-lg mb-4">Need more proof? I am ready to provide screen sharing or any other form of verification. Authenticity is always priority.</p>
+                <a href="contact.php" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">Contact Me</a>
             </div>
         </div>
     </div>

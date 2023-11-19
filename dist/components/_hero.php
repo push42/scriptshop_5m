@@ -10,7 +10,7 @@
             <div class="flex-shrink-0 mr-4">
                 <img src="./assets/images/products/door-creater.jpg" alt="Advanced Door Creator" class="w-24 h-24 object-cover rounded-md">
             </div>
-            <div class="flex-grow">
+             <div class="flex-grow">
                 <p class="text-lg font-black font-mono uppercase text-purple-400"><i class="fa-solid fa-store mr-2"></i>Last Purchase</p>
                 <h4 class="text-lm text-gray-100 font-semibold">Advanced Door Creator</h4>
                 <p class="text-gray-200 text-sm font-medium">Price: €45.5</p>
@@ -54,7 +54,7 @@
                 class="mt-8 mr-4 inline-block px-4 py-2 bg-purple-900 text-white rounded-3xl hover:bg-purple-200 hover:text-black transition text-l font-bold contact-button"><i class="fa-solid fa-comments mr-2"></i>Contact Me
             </a>
             <a href="faq.php"
-                class="mt-8 ml-4 inline-block px-4 py-2 bg-purple-900 text-white rounded-3xl hover:bg-purple-200 hover:text-black transition text-l font-bold about-me-button"><i class="fa-regular fa-face-smile mr-2"></i>F.A.Q
+                class="mt-8 ml-4 inline-block px-4 py-2 bg-purple-900 text-white rounded-3xl hover:bg-purple-200 hover:text-black transition text-l font-bold about-me-button"><i class="fa-solid fa-question mr-2"></i>F.A.Q
             </a>
         </div>
     </div>

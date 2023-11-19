@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 // Load composer
 require '../vendor/autoload.php';
-include_once 'functions/logging.php';
+// include_once 'functions/logging.php';
 ?>
 
 <!DOCTYPE html>
@@ -45,11 +45,31 @@ include_once 'functions/logging.php';
     </head>
         
 <body class="bg-zinc-950 font-sans">
+<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+<!-- Google Analytics -->
+<script type="text/plain" data-cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-HY18KG1YDX"></script>
+<script type="text/plain" data-cookie-consent="tracking">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HY18KG1YDX');
+</script>
+<!-- end of Google Analytics-->
+
+<noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
     
 <video autoplay loop muted playsinline id="background-video" class="min-w-full min-h-full fixed opacity-30">
     <source src="./assets/images/test.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    <object data="./assets/images/bg.png" type="image/png">
+        Your browser does not support the video tag and cannot display the image.
+    </object>
 </video>
+
 
 <?php
 // Load in the Header
@@ -66,7 +86,51 @@ require './components/_products.php';
 require './components/_footer.php';
 ?>
         
-        <script>
+        <script type="text/javascript" charset="UTF-8">
+        
+                document.addEventListener('DOMContentLoaded', function () {
+                    cookieconsent.run({
+                        "notice_banner_type": "simple",
+                        "consent_type": "express",
+                        "palette": "dark",
+                        "language": "en",
+                        "page_load_consent_levels": ["strictly-necessary"],
+                        "notice_banner_reject_button_hide": false,
+                        "preferences_center_close_button_hide": false,
+                        "page_refresh_confirmation_buttons": false
+                    });
+
+                    // Find the accept button in the cookie consent banner
+                    // Note: The selector might change depending on the actual structure of the banner
+                    var acceptButton = document.querySelector('.cookie-consent-accept-button'); // Update this selector based on your actual button
+
+                    // Attach event listener to the accept button
+                    if (acceptButton) {
+                        acceptButton.addEventListener('click', function() {
+                            triggerLogging();
+                        });
+                    }
+                });
+
+                // Function to trigger logging.php
+                function triggerLogging() {
+                    fetch('functions/logging.php', {
+                        method: 'GET',
+                        credentials: 'same-origin'
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        console.log('Success:', data);
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                    });
+                }
 
         </script>
     </body>

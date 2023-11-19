@@ -37,10 +37,10 @@
                 <h5 class="uppercase mb-6 font-bold text-white"><i class="fa-solid fa-layer-group mr-2"></i>My Projects</h5>
                 <ul class="list-none">
                     <li class="mt-2">
-                        <a href="https://roguev.de" class="hover:underline">FiveM</a>
+                        <a href="https://roguev.de" class="hover:underline">FiveM Gameserver <span class="text-xs">(Closed)</span></a>
                     </li>
                     <li class="mt-2">
-                        <a href="https://trap-life.de" class="hover:underline">Design Service</a>
+                        <a href="https://trap-life.de" class="hover:underline">Design Service <span class="text-xs">(Inactive)</span></a>
                     </li>
                 </ul>
             </div>
