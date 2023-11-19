@@ -7,8 +7,7 @@
 # project done?
 # dist/components/
 dist/assets/images/products/proof/
-dist/components/_productlist.php
-dist/proof.php
+# dist/components/_productlist.php
 dist/user_logs.txt
 dist/functions/user_logs.txt
 dist/../../*.txt
