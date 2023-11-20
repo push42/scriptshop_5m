@@ -94,9 +94,9 @@
             <?php
             session_start(); // Start the session at the beginning of each page
             
-            if (!isset($_SESSION['user_id'])) {
-                // If the user_id is not set in the session, redirect to the login page or show an error
-                header('Location: login.php'); // Redirect to login page
+            // Redirect users who are not logged in or not in the 'admin' group
+            if (!isset($_SESSION['user_id']) || $_SESSION['group'] !== 'admin') {
+                header("Location: contact_submit.php?status=unknown");
                 exit();
             }
             

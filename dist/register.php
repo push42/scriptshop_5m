@@ -1,8 +1,7 @@
 <?php
 session_start();
 include '../config/config.php';
-// Load in the Header
-require './components/_header.php';
+
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -10,6 +9,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = htmlspecialchars(trim($_POST['username']));
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+    $cfxUsername = htmlspecialchars(trim($_POST['cfxUsername']));
+    $discordId = htmlspecialchars(trim($_POST['discordId']));
     $avatarPath = null;
 
     // Handle avatar upload
@@ -28,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Insert data into the database
-        $stmt = $pdo->prepare("INSERT INTO users (username, password, email, avatar) VALUES (?, ?, ?, ?)");
-        $stmt->execute([$username, $password, $email, $avatarPath]);
+        $stmt = $pdo->prepare("INSERT INTO users (username, password, email, cfxUsername, discordId, avatar) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->execute([$username, $password, $email, $cfxUsername, $discordId, $avatarPath]);
 
         // Redirect or display success message
         // header("Location: success_page.php");
@@ -79,8 +80,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/9d1f4cdd15.js" crossorigin="anonymous"></script>
 </head>
-
-
+<?php
+// Load in the Header
+require './components/_header.php';
+?>
 <body class="bg-zinc-950">
     <div class="container mx-auto px-4 mb-40">
         <h2 class="text-white text-3xl font-bold text-center my-10 uppercase">Create your Account<span class="text-purple-500">.</span></h2>
@@ -102,10 +105,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input class="w-full px-4 py-2 bg-zinc-800 text-white border-2 rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="email" name="email" placeholder="Email" required>
             </div>
             <div class="w-full mb-4">
-                <input class="w-full px-4 py-2 bg-zinc-800 text-white border-2 rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="text" name="discord_id" placeholder="CFX-Username" required>
+                <input class="w-full px-4 py-2 bg-zinc-800 text-white border-2 rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="text" name="cfxUsername" placeholder="CFX-Username" required>
             </div>
             <div class="w-full mb-4">
-                <input class="w-full px-4 py-2 bg-zinc-800 text-white border-2 rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="text" name="discord_id" placeholder="Discord ID (not required)">
+                <input class="w-full px-4 py-2 bg-zinc-800 text-white border-2 rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="text" name="discordId" placeholder="Discord ID (not required)">
             </div>
             <div class="w-full mb-4">
                 <input class="w-full px-4 py-2 bg-zinc-800 text-white border-2 rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="file" name="avatar" accept="image/*">

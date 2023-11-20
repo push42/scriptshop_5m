@@ -89,30 +89,6 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
 
     <body class="bg-zinc-950 text-white">
 
-
-    <!-- About Me Section -->
-    <section class="py-12 bg-zinc-900">
-        <div class="container mx-auto px-4 text-center">
-            <div class="flex flex-col items-center">
-                <!-- Image -->
-                <img src="assets/images/products/proof/push42.png" alt="Your Name" class="rounded-full w-32 h-32 mb-4 object-fill">
-                
-                <!-- Name and Bio -->
-                <h3 class="text-2xl text-white font-bold mb-2">About me<span class="text-purple-500">.</span></h3>
-                <p class="text-gray-300 mb-4 max-w-xs mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doomnis voluptatibus itaque ulla voluptate fuga..</p>
-
-                <!-- Social Profiles -->
-                <div class="flex space-x-4 justify-center">
-                    <a href="https://t.me/push420" target="_blank" class="text-blue-400 hover:text-blue-600"><i class="fab fa-telegram-plane"></i> @push420</a>
-                    <a href="https://discord.com/users/push.42" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-discord"></i> push.42</a>
-                    <!-- Additional social links if needed -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
     <!-- Contact Form Section -->
     <section class="py-12">
         <div class="container mx-auto px-4">
@@ -140,13 +116,13 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
                     <!-- CFX Username -->
                     <div class="md:col-span-1 lg:col-span-1">
                         <label for="cfxUsername" class="block mb-2">CFX Username: <span class="required">*</span></label>
-                        <input type="text" id="cfxUsername" name="cfxUsername" required class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded" placeholder="CFX-Username for transfer">
+                        <input type="text" id="cfxUsername" name="cfxUsername" value="<?php echo isset($_SESSION['cfx_username']) ? $_SESSION['cfx_username'] : ''; ?>" required class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded" placeholder="CFX-Username for transfer">
                     </div>
 
                     <!-- Email -->
                     <div class="md:col-span-1 lg:col-span-1">
                         <label for="email" class="block mb-2">Email: <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" required class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded" placeholder="Email to concact you back">
+                        <input type="email" id="email" name="email" value="<?php echo isset($_SESSION['email']) ? $_SESSION['email'] : ''; ?>" required class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded" placeholder="Email to concact you back">
                     </div>
 
                     <!-- Product ID -->
@@ -155,10 +131,10 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
                         <input type="text" id="productId" name="productId" required class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded" placeholder="Product ID(s) of your interest">
                     </div>
 
-                    <!-- Discord Nutzername -->
+                    <!-- Discord Username -->
                     <div class="md:col-span-1 lg:col-span-1">
                         <label for="discordId" class="block mb-2">Discord:</label>
-                        <input type="text" id="discordId" name="discordId" required class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded" placeholder="Your Discord ID (ex. Max#0011)">
+                        <input type="text" id="discordId" name="discordId" value="<?php echo isset($_SESSION['discord_id']) ? $_SESSION['discord_id'] : ''; ?>" required class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded" placeholder="Your Discord ID (ex. Max#0011)">
                     </div>
 
                     <!-- Message -->
@@ -170,6 +146,28 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
 
                 <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mt-4">Send Message</button>
             </form>
+        </div>
+    </section>
+
+    
+    <!-- About Me Section -->
+    <section class="py-12 bg-zinc-950">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col items-center">
+                <!-- Image -->
+                <img src="assets/images/products/proof/push42.png" alt="Your Name" class="rounded-full w-32 h-32 mb-4 object-fill">
+                
+                <!-- Name and Bio -->
+                <h3 class="text-2xl text-white font-bold mb-2">About me<span class="text-purple-500">.</span></h3>
+                <p class="text-gray-300 mb-4 max-w-xs mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doomnis voluptatibus itaque ulla voluptate fuga..</p>
+
+                <!-- Social Profiles -->
+                <div class="flex space-x-4 justify-center">
+                    <a href="https://t.me/push420" target="_blank" class="text-blue-400 hover:text-blue-600"><i class="fab fa-telegram-plane"></i> @push420</a>
+                    <a href="https://discord.com/users/push.42" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-discord"></i> push.42</a>
+                    <!-- Additional social links if needed -->
+                </div>
+            </div>
         </div>
     </section>
 

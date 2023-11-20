@@ -7,11 +7,11 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper rounded-3xl">
                 <!-- Slides -->
                 <!-- Structure for each slide with image, title, description, and price badge -->
                 <!-- Slide 1 -->
-                <div class="swiper-slide relative">
+                <div class="swiper-slide relative rounded-3xl">
                     <div class="image-wrapper" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio Placeholder -->
                         <img src="./assets/images/products/codem/mAppearance.jpg" alt="mAppearance" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                     </div>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <!-- Slide 2 -->
-                <div class="swiper-slide relative">
+                <div class="swiper-slide relative rounded-3xl">
                     <div class="image-wrapper" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio Placeholder -->
                         <img src="./assets/images/products/lab-pet.png" alt="LAB-PET V2" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                     </div>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <!-- Slide 3 -->
-                <div class="swiper-slide relative">
+                <div class="swiper-slide relative rounded-3xl">
                     <div class="image-wrapper" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio Placeholder -->
                         <img src="./assets/images/products/drug-creater.jpeg" alt="Advanced Drugs Creator" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                     </div>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <!-- Slide 4 -->
-                <div class="swiper-slide relative">
+                <div class="swiper-slide relative rounded-3xl">
                     <div class="image-wrapper" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio Placeholder -->
                         <img src="./assets/images/products/smartphone.png" alt="Quasar Smartphone" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                     </div>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <!-- Slide 5 -->
-                <div class="swiper-slide relative">
+                <div class="swiper-slide relative rounded-3xl">
                     <div class="image-wrapper" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio Placeholder -->
                         <img src="./assets/images/products/tv.jpg" alt="RTX Television" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                     </div>
@@ -71,7 +71,7 @@
                     </div>
                 </div>
                 <!-- Slide 6 -->
-                <div class="swiper-slide relative">
+                <div class="swiper-slide relative rounded-3xl">
                     <div class="image-wrapper" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio Placeholder -->
                         <img src="./assets/images/products/t1ger.png" alt="T1GER Gang System" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                     </div>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <!-- Slide 7 -->
-                <div class="swiper-slide relative">
+                <div class="swiper-slide relative rounded-3xl">
                     <div class="image-wrapper" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio Placeholder -->
                         <img src="./assets/images/products/window.jpg" alt="Multiplayer Window Cleaner" class="swiper-lazy absolute inset-0 w-full h-full object-cover"/>
                     </div>
@@ -112,16 +112,18 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script>
-  // Initialize Swiper with Autoplay
+  // Initialize Swiper with Autoplay and Lazy Loading
   var swiper = new Swiper('.swiper-container', {
-    // Parameters
     initialSlide: 2,
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
     autoplay: {
-      delay: 3500, // Delay in milliseconds before the next slide is shown
-      disableOnInteraction: false, // Autoplay will not be disabled after user interactions
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    lazy: {
+      loadPrevNext: true,
     },
     pagination: {
       el: '.swiper-pagination',
@@ -131,7 +133,6 @@
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    // Responsive breakpoints
     breakpoints: {
       320: {
         slidesPerView: 1,

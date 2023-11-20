@@ -26,6 +26,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Redirect to a different page or display a success message
             $_SESSION['user_id'] = $user['id']; // Set the session variable holding the user's ID
             $_SESSION['user_name'] = $user['username']; // Set the session variable for username
+            $_SESSION['email'] = $user['email']; // Set the session variable for username
+            $_SESSION['discord_id'] = $user['discordId']; // Set the session variable for discord ID
+            $_SESSION['cfx_username'] = $user['cfxUsername']; // Set the session variable for cfx Username
+            $_SESSION['group'] = $user['group']; // Set the session group
             $loginSuccessful = true;
             header("Location: index.php");
             exit;

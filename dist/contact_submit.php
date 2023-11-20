@@ -51,6 +51,9 @@ require './components/_header.php';
         <?php elseif (isset($_GET['status']) && $_GET['status'] == 'error'): ?>
             <h1 class="text-3xl font-bold text-red-400 mb-4">Oops!</h1>
             <p class="text-lg">There was a problem sending your message. Please try again later.</p>
+        <?php elseif (isset($_GET['status']) && $_GET['status'] == 'unknown'): ?>
+            <h1 class="text-3xl font-bold text-red-400 mb-4">Oops, sorry!</h1>
+            <p class="text-lg">You are not supposed to have access here.</p>
         <?php else: ?>
             <h1 class="text-3xl font-bold text-gray-400 mb-4">Hmm...</h1>
             <p class="text-lg">It seems you've landed here by mistake.</p>

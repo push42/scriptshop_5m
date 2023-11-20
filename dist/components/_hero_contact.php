@@ -2,7 +2,8 @@
 <section class="relative">
     <div class="video-container absolute inset-0 w-full h-full overflow-hidden z-0">
         <video autoplay loop muted playsinline class="max-w-full max-h-full w-full h-full object-cover">
-            <source src="./assets/images/test.mp4" type="video/mp4">
+            <source src="./assets/images/bg.mp4" type="video/mp4">
+            <object src="./assets/images/bg.png" type="image/png"></object>
             Your browser does not support the video tag.
         </video>
         <!-- Telegram Chat Box -->
