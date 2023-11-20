@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -37,32 +34,37 @@ session_start();
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/9d1f4cdd15.js" crossorigin="anonymous"></script>
     </head>
-<!-- Improved Header Section -->
-<header class="bg-zinc-950 text-gray-100 py-5 relative">
 
+    <header class="bg-zinc-950 text-gray-100 py-5 relative">
     <div class="container mx-auto flex items-center justify-between">
-        <!-- Branding -->
-        <a href="index.php" class="text-2xl font-semibold ml-4 flex items-center">
-            <i class="fas fa-code mr-2"></i> FiveM Scripts
-        </a>
-
+        <!-- Branding with Logo -->
+        <div class="flex items-center">
+            <a href="index.php" class="flex items-center mr-4">
+                <!-- Replace with your logo image or keep the icon -->
+                <img src="assets/images/code.png" alt="Logo" class="h-8"> <!-- Adjust size as needed -->
+            </a>
+            <div>
+                <span>@PUSH.42</span><br>
+                <span class="text-2xl font-semibold">Script Collection</span>
+            </div>
+        </div>
         <!-- Hamburger Menu Button (Small Screens) -->
         <button id="menu-toggle" class="md:hidden text-2xl focus:outline-none focus:ring focus:ring-purple-500 mr-4">
             <i class="fas fa-bars"></i>
         </button>
 
         <!-- Navigation Menu (Large Screens) -->
-        <nav class="hidden md:flex md:items-center md:gap-6">
-            <a href="index.php" class="text-lg hover:text-purple-400 font-semibold">My Scripts</a>
-            <a href="contact.php" class="hover:text-purple-400 font-semibold">Contact</a>
-            <a href="faq.php" class="hover:text-purple-400 font-semibold">F.A.Q</a>
-            <a href="proof.php" class="hover:text-purple-400 font-semibold">Ownership Proof</a>
-            <a href="#" id="open_preferences_center" class="hover:text-purple-400 font-semibold">Cookie Settings</a>
+        <nav class="hidden md:flex md:items-center md:gap-8 text-sm">
+            <a href="index.php" class="text-lg hover:text-purple-400 font-semibold"><i class="fa-solid fa-code mr-2"></i>My Scripts</a>
+            <a href="contact.php" class="hover:text-red-400 font-semibold"><i class="fa-solid fa-comments mr-2"></i>Contact</a>
+            <a href="faq.php" class="hover:text-green-400 font-semibold"><i class="fa-solid fa-question mr-2"></i>F.A.Q</a>
+            <a href="proof.php" class="hover:text-blue-400 font-semibold"><i class="fa-solid fa-receipt mr-2"></i>Ownership</a>
+            <a href="#" id="open_preferences_center" class="hover:text-orange-400 font-semibold"><i class="fa-solid fa-cookie mr-2"></i>Cookies</a>
             <?php if (isset($_SESSION['user_id'])): ?>
-            <a href="logout.php" class="hover:text-purple-400 font-semibold">Logout</a>
+            <a href="logout.php" class="hover:text-purple-400 font-semibold"><i class="fa-solid fa-right-to-bracket mr-2"></i>Logout</a>
             <?php endif; ?>
             <?php if (!isset($_SESSION['user_id'])): ?>
-            <a href="register.php" class="hover:text-purple-400 font-semibold">Login / Register</a>
+            <a href="register.php" class="hover:text-yellow-400 font-semibold"><i class="fa-solid fa-right-to-bracket mr-2"></i>Login / Register</a>
             <?php endif; ?>
         </nav>
     </div>
@@ -78,7 +80,7 @@ session_start();
         <a href="logout.php" class="block px-4 py-2 text-sm hover:bg-gray-800 font-semibold">Logout</a>
         <?php endif; ?>
         <?php if (!isset($_SESSION['user_id'])): ?>
-        <a href="register.php" class="hover:text-purple-400 font-semibold">Login / Register</a>
+        <a href="register.php" class="block px-4 py-2 text-sm hover:bg-gray-800 font-semibold">Login / Register</a>
         <?php endif; ?>
     </div>
 </header>

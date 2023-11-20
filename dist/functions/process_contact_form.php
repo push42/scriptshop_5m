@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../../config/config.php';
 
 // Check if the form is submitted

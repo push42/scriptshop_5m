@@ -1,12 +1,12 @@
 <?php
+session_start();
 use GeoIp2\Record\Location;
 include '../config/config.php';
-// Load in the Header
-require './components/_header.php';
 require './functions/logger.php';
 
 // Initialize variables for login errors or messages
 $loginError = '';
+$loginSuccessful = false;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = htmlspecialchars(trim($_POST['username']));
@@ -26,7 +26,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Redirect to a different page or display a success message
             $_SESSION['user_id'] = $user['id']; // Set the session variable holding the user's ID
             $_SESSION['user_name'] = $user['username']; // Set the session variable for username
-            header("Location: functions/login_status.php?status=success");
+            $loginSuccessful = true;
+            header("Location: index.php");
+            exit;
         } else {
             // User not found or password incorrect
             $loginError = 'Invalid username or password.';
@@ -36,6 +38,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $loginError = 'Error during login. Please try again.';
     }
 }
+// Load in the Header
+require './components/_header.php';
 ?>
 
 <!doctype html>

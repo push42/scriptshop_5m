@@ -39,6 +39,7 @@
 <body class="bg-zinc-950 text-white">
 
 <?php
+session_start();
 require '../components/_header.php';
 ?>
 

@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Show error's (debugging)
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -87,6 +88,30 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
     </head>
 
     <body class="bg-zinc-950 text-white">
+
+
+    <!-- About Me Section -->
+    <section class="py-12 bg-zinc-900">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col items-center">
+                <!-- Image -->
+                <img src="assets/images/products/proof/push42.png" alt="Your Name" class="rounded-full w-32 h-32 mb-4 object-fill">
+                
+                <!-- Name and Bio -->
+                <h3 class="text-2xl text-white font-bold mb-2">About me<span class="text-purple-500">.</span></h3>
+                <p class="text-gray-300 mb-4 max-w-xs mx-auto">Short bio goes here. Max 250 symbols, describing your passion for scripting and development in FiveM.</p>
+
+                <!-- Social Profiles -->
+                <div class="flex space-x-4 justify-center">
+                    <a href="https://t.me/push420" target="_blank" class="text-blue-400 hover:text-blue-600"><i class="fab fa-telegram-plane"></i> @push420</a>
+                    <a href="https://discord.com/users/push.42" target="_blank" class="text-blue-600 hover:text-blue-800"><i class="fab fa-discord"></i> push.42</a>
+                    <!-- Additional social links if needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!-- Contact Form Section -->
     <section class="py-12">

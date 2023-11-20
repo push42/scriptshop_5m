@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Load in the Header
 require './components/_header.php';
 require './components/_hero_faq.php';

@@ -40,6 +40,7 @@
 
 <div id="app">
     <?php
+    session_start();
     require './components/_header.php';
     ?>
 
