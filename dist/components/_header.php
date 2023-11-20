@@ -61,6 +61,9 @@ session_start();
             <?php if (isset($_SESSION['user_id'])): ?>
             <a href="logout.php" class="hover:text-purple-400 font-semibold">Logout</a>
             <?php endif; ?>
+            <?php if (!isset($_SESSION['user_id'])): ?>
+            <a href="register.php" class="hover:text-purple-400 font-semibold">Login / Register</a>
+            <?php endif; ?>
         </nav>
     </div>
 
@@ -73,6 +76,9 @@ session_start();
         <a href="#" id="open_preferences_center" class="block px-4 py-2 text-sm hover:bg-gray-800 font-semibold">Cookie Settings</a>
         <?php if (isset($_SESSION['user_id'])): ?>
         <a href="logout.php" class="block px-4 py-2 text-sm hover:bg-gray-800 font-semibold">Logout</a>
+        <?php endif; ?>
+        <?php if (!isset($_SESSION['user_id'])): ?>
+        <a href="register.php" class="hover:text-purple-400 font-semibold">Login / Register</a>
         <?php endif; ?>
     </div>
 </header>

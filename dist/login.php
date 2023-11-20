@@ -1,9 +1,9 @@
 <?php
 use GeoIp2\Record\Location;
-
 include '../config/config.php';
 // Load in the Header
 require './components/_header.php';
+require './functions/logger.php';
 
 // Initialize variables for login errors or messages
 $loginError = '';
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             // User not found or password incorrect
             $loginError = 'Invalid username or password.';
-            header("Location: functions/login_status.php?status=error");
+            logFailedLogin($pdo, $username);
         }
     } catch (PDOException $e) {
         $loginError = 'Error during login. Please try again.';

@@ -1,5 +1,4 @@
 <?php
-session_start();
 include '../config/config.php';
 // Load in the Header
 require './components/_header.php';

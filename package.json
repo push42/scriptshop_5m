@@ -13,6 +13,7 @@
     "tailwindcss": "^3.3.5"
   },
   "dependencies": {
-    "vue": "^3.3.8"
+    "vue": "^3.3.8",
+    "winston": "^3.11.0"
   }
 }
