@@ -21,6 +21,8 @@ Because of this reason i setup a personal portfolio with all of my collected scr
 This way people can easily see what kind of scripts i offer and directly contact me trough my website or via social profiles.
 Feel free to customize this website to your liking and use it for whatever you please!
 Happy Coding! <3
+![Preview7](https://i.postimg.cc/Fzpm5j1X/website-preview.jpg)
+![Preview8](https://i.postimg.cc/gkBFVcZs/shop-preview2.png)
 
 
 # 🔎 Preview
