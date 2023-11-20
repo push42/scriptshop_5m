@@ -55,7 +55,7 @@
 
         <!-- Navigation Menu (Large Screens) -->
         <nav class="hidden md:flex md:items-center md:gap-8 text-sm">
-            <a href="index.php" class="text-lg hover:text-purple-400 font-semibold"><i class="fa-solid fa-code mr-2"></i>My Scripts</a>
+            <a href="#product-dsection" class="text-lg hover:text-purple-400 font-semibold"><i class="fa-solid fa-code mr-2"></i>My Scripts</a>
             <a href="contact.php" class="hover:text-red-400 font-semibold"><i class="fa-solid fa-comments mr-2"></i>Contact</a>
             <a href="faq.php" class="hover:text-green-400 font-semibold"><i class="fa-solid fa-question mr-2"></i>F.A.Q</a>
             <a href="proof.php" class="hover:text-blue-400 font-semibold"><i class="fa-solid fa-receipt mr-2"></i>Ownership</a>

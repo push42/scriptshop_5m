@@ -692,6 +692,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -734,10 +738,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .block {
@@ -892,12 +892,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -1041,10 +1041,6 @@ video {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-\[url\(\'dist\/assets\/images\/bg_hero\.png\'\)\] {
-  background-image: url('dist/assets/images/bg_hero.png');
-}
-
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -1053,10 +1049,6 @@ video {
   --tw-gradient-from: #09090b var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(9 9 11 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .bg-center {
@@ -1324,10 +1316,6 @@ video {
 
 .opacity-30 {
   opacity: 0.3;
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .shadow {

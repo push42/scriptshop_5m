@@ -16,7 +16,7 @@
                         <a href="legal.php" class="hover:underline">Privacy Policy</a>
                     </li>
                     <li class="mt-2">
-                        <a href="inbox.php" class="hover:underline">Administration</a>
+                        <a href="legal.php" class="hover:underline">Impressum</a>
                     </li>
                 </ul>
             </div>

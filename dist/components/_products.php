@@ -59,6 +59,7 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
             <option value="codem-package">CodeM Package</option>
             <option value="pickle-package">Pickle Package</option>
         </select>
+        <button class="ml-2 border-2 border-gray-600 rounded-lg px-4 p-2 text-purple-400 font-bold" id="currencyToggle"><i class="fa-solid fa-money-bill-transfer mr-2 text-gray-200"></i>Convert Prices to USD / EURO</button>
     </div>
 </div>
 
@@ -71,7 +72,7 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
 
 
 <!-- Product Display Section -->
-<section class="bg-zinc-950 py-20">
+<section class="bg-zinc-950 py-20" id="product-dsection">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             <?php foreach ($products as $index => $product): ?>
@@ -94,7 +95,7 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
                     <a href="<?php echo $product['website']; ?>" class="text-purple-600 hover:text-indigo-800 text-sm">Visit Website</a>
                     <div class="flex justify-between items-center mt-4">
                         <span class="text-gray-500 line-through">€<?php echo $product['originalPrice']; ?></span>
-                        <span class="text-lg text-purple-600">€<?php echo $product['salePrice']; ?></span>
+                        <span class="price text-purple-600 text-lg text-bold" data-original-price="<?php echo $product['salePrice']; ?>">€<?php echo $product['salePrice']; ?></span>
                     </div>
                 </div>
             </div>
@@ -170,6 +171,40 @@ function filterProducts() {
         packageDisplay.classList.remove('hidden'); // Show package info
     }
 }
+
+// Function for conversation of currency
+let currentCurrency = 'EUR'; // Default currency
+
+// Function to get the current exchange rate from Euro to USD
+async function getExchangeRate() {
+    const apiKey = '2a687c0aeb5debc50fd05c21'; // Replace with your ExchangeRate-API key, its FREE
+    const response = await fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/EUR`);
+    const data = await response.json();
+    return data.conversion_rates.USD; // Return the EUR to USD conversion rate
+}
+
+// Function to convert product prices and update the display
+async function toggleCurrency() {
+    const exchangeRate = await getExchangeRate();
+    const productPrices = document.querySelectorAll('.product-card .price');
+
+    productPrices.forEach(priceElement => {
+        let price = parseFloat(priceElement.dataset.originalPrice);
+
+        if (currentCurrency === 'EUR') {
+            const usdPrice = (price * exchangeRate).toFixed(2);
+            priceElement.innerText = `$${usdPrice}`;
+        } else {
+            priceElement.innerText = `€${price.toFixed(2)}`;
+        }
+    });
+
+    currentCurrency = (currentCurrency === 'EUR') ? 'USD' : 'EUR'; // Toggle the current currency
+}
+
+// Example usage
+document.getElementById('currencyToggle').addEventListener('click', toggleCurrency);
+
 
 </script>
 
