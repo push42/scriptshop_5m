@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,7 +92,16 @@
     <!-- Inbox messages -->
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <?php
+            session_start(); // Start the session at the beginning of each page
+            
+            if (!isset($_SESSION['user_id'])) {
+                // If the user_id is not set in the session, redirect to the login page or show an error
+                header('Location: login.php'); // Redirect to login page
+                exit();
+            }
+            
             include '../config/config.php';
+    
 
             $newMessageCount = 0; // Initialize a counter for new messages
 

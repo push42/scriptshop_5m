@@ -3,8 +3,8 @@
 require './components/_header.php';
 require './components/_hero_faq.php';
 ?>
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

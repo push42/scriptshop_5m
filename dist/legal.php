@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,9 @@
 <body class="bg-zinc-950 font-sans text-white">
 
 <div id="app">
-    <?php require './components/_header.php'; ?>
+    <?php
+    require './components/_header.php';
+    ?>
 
     <!-- Legal Disclosure Section -->
     <section class="py-2">

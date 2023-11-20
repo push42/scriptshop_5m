@@ -8,8 +8,8 @@ require '../vendor/autoload.php';
 // include_once 'functions/logging.php';
 ?>
 
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +60,6 @@ require '../vendor/autoload.php';
 
 <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
 <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
-
 
     
 <video autoplay loop muted playsinline id="background-video" class="min-w-full min-h-full fixed opacity-30">

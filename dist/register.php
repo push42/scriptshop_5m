@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../config/config.php';
 // Load in the Header
 require './components/_header.php';
@@ -43,8 +44,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +83,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body class="bg-zinc-950">
     <div class="container mx-auto px-4 mb-40">
-        <h2 class="text-white text-3xl font-bold text-center my-10">Create Your Account</h2>
+        <h2 class="text-white text-3xl font-bold text-center my-10">Create your Account</h2>
+
+        <!-- Login Prompt -->
+        <div class="text-center mb-6">
+            <p class="text-white">Already have an account? <a href="login.php" class="text-purple-500 hover:text-purple-700">Log in</a></p>
+        </div>
+
+        <!-- Registration Form -->
         <form action="register.php" method="post" enctype="multipart/form-data" class="max-w-md mx-auto bg-zinc-900 p-8 rounded shadow">
             <div class="w-full mb-4">
                 <input class="w-full px-4 py-2 bg-zinc-700 text-white border rounded-md focus:border-purple-500 focus:ring focus:ring-opacity-40 focus:ring-purple-300" type="text" name="username" placeholder="Username" required>

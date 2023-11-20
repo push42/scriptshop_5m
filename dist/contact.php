@@ -49,8 +49,8 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
 ?>
 
 
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
