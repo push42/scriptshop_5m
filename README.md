@@ -13,6 +13,16 @@ I stopped having interest in GTA Roleplay and no longer develop for FiveM.
 Feel free to modify my website or use it for yourself (ofcourse with your edited information), i really don't bother.
 The contact form uses a database to save the send contact messages.
 
+
+# What is this project about?
+
+I personally lost interest in developing and maintaing a FiveM Server.
+Because of this reason i setup a personal portfolio with all of my collected scripts over the past years.
+
+![PreviewHP](https://i.ibb.co/yR0G0cf/website-preview.jpg)
+![PreviewSHOP](https://i.ibb.co/tbmCrr4/shop-preview2.png)
+
+
 # 🔎 Preview
 - from 14.11.2023 / 00:27 - may have changed already
 
