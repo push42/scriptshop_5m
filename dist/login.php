@@ -22,11 +22,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($user && password_verify($password, $user['password'])) {
-            // User found and password correct
-            // Proceed to log the user in (start session, set session variables, etc.)
+
             // Redirect to a different page or display a success message
             $_SESSION['user_id'] = $user['id']; // Set the session variable holding the user's ID
-            $_SESSION['user_name'] = $user['username']; // Set the session variable, assuming $user['id'] holds the user's ID
+            $_SESSION['user_name'] = $user['username']; // Set the session variable for username
             header("Location: functions/login_status.php?status=success");
         } else {
             // User not found or password incorrect
