@@ -85,7 +85,9 @@
 <body class="bg-zinc-950 text-white font-sans">
 <div class="container mx-auto px-4 py-8">
 
-
+    <a href="logout.php" class="absolute top-2 left-4 bg-black bg-opacity-50 hover:bg-opacity-70 text-white hover:text-indigo-800 rounded-full p-2">
+        <i class="fa-solid fa-right-to-bracket mr-2"></i>Logout
+    </a>
     <h2 class="text-3xl font-bold text-center mb-8 text-gray-100"><i class="fa-solid fa-envelope-open-text mr-2"></i>Inbox</h2>
 
 
@@ -152,7 +154,7 @@
 
         <!-- Welcome Box -->
         <div class="welcome-box fixed top-0 right-0 m-4 p-2 bg-purple-600 text-white rounded-lg shadow-lg items-center grid z-10">
-            <span>Welcome back, <strong>Push42</strong>.</span>
+            <span>Welcome back, <?php $_SESSION['user_name']; ?>.</span>
             
             <?php if ($newMessageCount > 0): ?>
                 <span class="font-mono text-sm">You have <?php echo $newMessageCount; ?> new messages.</span>

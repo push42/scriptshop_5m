@@ -44,8 +44,8 @@
                 <img src="assets/images/code.png" alt="Logo" class="h-8"> <!-- Adjust size as needed -->
             </a>
             <div>
-                <span>@PUSH.42</span><br>
-                <span class="text-2xl font-semibold">Script Collection</span>
+                <span class="font-mono font-black text-purple-400 text-xs mr-6">@PUSH.42</span> <span class="font-bold text-xs"> // My Script Collection</span><br>
+                <span class="text-2xl font-extralight uppercase">FiveM Script Resell</span>
             </div>
         </div>
         <!-- Hamburger Menu Button (Small Screens) -->

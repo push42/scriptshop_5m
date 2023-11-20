@@ -128,7 +128,7 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
                     <!-- Product ID -->
                     <div class="md:col-span-1 lg:col-span-1">
                         <label for="productId" class="block mb-2">Product ID(s):</label>
-                        <input type="text" id="productId" name="productId" required class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded" placeholder="Product ID(s) of your interest">
+                        <input type="text" id="productId" name="productId" class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded" placeholder="Product ID(s) of your interest">
                     </div>
 
                     <!-- Discord Username -->

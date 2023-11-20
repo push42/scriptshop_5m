@@ -76,7 +76,11 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             <?php foreach ($products as $index => $product): ?>
             <!-- Product Card -->
-            <div class="product-card bg-dark-theme rounded-lg overflow-hidden shadow-lg" data-package="<?php echo $product['package']; ?>" data-tags="<?php echo implode(', ', $product['tags']); ?>">
+            <div class="relative product-card bg-dark-theme rounded-lg overflow-hidden shadow-lg" data-package="<?php echo $product['package']; ?>" data-tags="<?php echo implode(', ', $product['tags']); ?>">
+                <!-- Contact Icon -->
+                <a href="contact.php" class="absolute top-2 right-2 bg-black bg-opacity-50 hover:bg-opacity-70 text-white hover:text-indigo-800 rounded-full p-2">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
                 <img src="<?php echo $product['image']; ?>" alt="Product Image" class="w-full h-48 object-cover">
                 <div class="p-4">
                     <h3 class="text-lg font-bold text-gray-200"><?php echo $product['name']; ?></h3>
