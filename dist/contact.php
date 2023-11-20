@@ -99,7 +99,7 @@ echo "<script>var packageInfo = " . json_encode($package_info) . ";</script>";
                 
                 <!-- Name and Bio -->
                 <h3 class="text-2xl text-white font-bold mb-2">About me<span class="text-purple-500">.</span></h3>
-                <p class="text-gray-300 mb-4 max-w-xs mx-auto">Short bio goes here. Max 250 symbols, describing your passion for scripting and development in FiveM.</p>
+                <p class="text-gray-300 mb-4 max-w-xs mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus doomnis voluptatibus itaque ulla voluptate fuga..</p>
 
                 <!-- Social Profiles -->
                 <div class="flex space-x-4 justify-center">
