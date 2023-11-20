@@ -18,9 +18,9 @@ The contact form uses a database to save the send contact messages.
 
 I personally lost interest in developing and maintaing a FiveM Server.
 Because of this reason i setup a personal portfolio with all of my collected scripts over the past years.
-
-![PreviewHP](https://i.ibb.co/yR0G0cf/website-preview.jpg)
-![PreviewSHOP](https://i.ibb.co/tbmCrr4/shop-preview2.png)
+This way people can easily see what kind of scripts i offer and directly contact me trough my website or via social profiles.
+Feel free to customize this website to your liking and use it for whatever you please!
+Happy Coding! <3
 
 
 # 🔎 Preview
