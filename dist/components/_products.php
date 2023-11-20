@@ -14,22 +14,22 @@ $totalProducts = count($products);
 // array for package information
 $package_info = [
     'wasabi-package' => [
-        'description' => 'A collection of essential ESX scripts to boost your server performance.',
+        'description' => 'The Wasabi Package features a curated selection of essential ESX scripts designed to enhance server performance and player experience. Ideal for servers seeking reliability and efficiency.',
         'price' => '50.00',
     ],
     'codem-package' => [
-        'description' => 'An advanced set of scripts for roleplaying scenarios.',
-        'price' => '75.00',
+        'description' => 'The CodeM Package offers an advanced suite of premium scripts, perfect for creating immersive roleplaying scenarios. This package is tailored for servers looking for depth and sophistication in their gameplay.',
+        'price' => '125.00',
     ],
     'okok-package' => [
-        'description' => 'A collection of high quality ESX scripts (some are also standalone) made by okok. All scripts shown below are included in this package.',
+        'description' => 'The okok Package presents a versatile array of high-quality ESX scripts, including some standalone options, crafted by okok. It is a comprehensive solution for servers aiming for top-notch functionality and variety.',
         'price' => '65.00',
     ],
     'pickle-package' => [
-        'description' => 'A collection of high quality ESX scripts (some are also standalone) made by okok. All scripts shown below are included in this package.',
-        'price' => '65.00',
+        'description' => 'The Pickle Package brings together a diverse mix of ESX + QBCORE scripts, along with standalone options, offering a balanced blend of performance and innovation. A great choice for servers seeking variety and quality.',
+        'price' => '60.00',
     ],
-    // more packages as needed
+    // more packages as needed    
 ];
 
 // Pass the package information to JavaScript

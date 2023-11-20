@@ -120,3 +120,18 @@ body, html {
 
 
 
+.hero-section {
+  background-image: url('../dist/assets/images/bg3.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Add an after pseudo-element for the opacity layer */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: -1;
+}

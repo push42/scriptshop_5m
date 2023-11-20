@@ -2,6 +2,7 @@
 session_start();
 // Load in the Header
 require './components/_header.php';
+require './components/_hero2.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -43,9 +44,17 @@ require './components/_header.php';
 
     <body class="bg-zinc-950 text-white font-sans">
     <div class="container mx-auto p-8">
-        <div class="items-center justify-center min-h-screen grid md:grid-cols-2">
+        <div class="items-center justify-center min-h-screen grid md:grid-cols-2 gap-2">
             
             
+            <!-- Description Section -->
+            <div class="bg-zinc-900 p-6 rounded-lg shadow-lg text-center">
+                <h1 class="text-4xl font-bold mb-6 text-center text-purple-600">Script Ownership Proof</h1>
+                <p class="text-lg mb-4">Need more proof? I am ready to provide screen sharing or any other form of verification. Authenticity is always priority.</p>
+                <a href="contact.php" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded"><i class="fa-solid fa-comments mr-2"></i>Contact Me</a>
+            </div>
+
+
             <!-- Video Section -->
             <div class="w-full max-w-4xl bg-black rounded overflow-hidden shadow-lg mb-10">
                 <video controls autoplay muted class="w-full">
@@ -54,12 +63,6 @@ require './components/_header.php';
                 </video>
             </div>
             
-            <!-- Description Section -->
-            <div class="bg-zinc-800 p-6 rounded-lg shadow-lg text-center">
-                <h1 class="text-4xl font-bold mb-6 text-center text-purple-600">Script Ownership Proof</h1>
-                <p class="text-lg mb-4">Need more proof? I am ready to provide screen sharing or any other form of verification. Authenticity is always priority.</p>
-                <a href="contact.php" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">Contact Me</a>
-            </div>
         </div>
     </div>
 

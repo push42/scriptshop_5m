@@ -994,5 +994,9 @@ module.exports = {
     },
   },
   plugins: [],
+  extend: {
+    backgroundImage: theme => ({
+      'hero-pattern': "url('dist/assets/images/bg_hero.png')"
+    })
+  }
 }
-

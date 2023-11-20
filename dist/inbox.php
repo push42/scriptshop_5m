@@ -92,7 +92,7 @@
 
 
     <!-- Inbox messages -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div id="messagesContainer" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <?php
             session_start(); // Start the session at the beginning of each page
             
@@ -154,7 +154,7 @@
 
         <!-- Welcome Box -->
         <div class="welcome-box fixed top-0 right-0 m-4 p-2 bg-purple-600 text-white rounded-lg shadow-lg items-center grid z-10">
-            <span>Welcome back, <?php $_SESSION['user_name']; ?>.</span>
+            <span>Welcome back, <strong><?php echo$_SESSION['user_name']; ?></strong>.</span>
             
             <?php if ($newMessageCount > 0): ?>
                 <span class="font-mono text-sm">You have <?php echo $newMessageCount; ?> new messages.</span>
@@ -187,6 +187,7 @@
         .catch(error => console.error('Error:', error));
     }
 </script>
+
 
 
 </body>

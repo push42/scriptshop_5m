@@ -51,7 +51,7 @@
             <div class="w-full md:w-1/4 mb-6 md:mb-0">
                 <h5 class="uppercase mb-6 font-bold text-white"><i class="fa-solid fa-paper-plane mr-2"></i>Contact Me</h5>
                 <p>Are you looking to get in touch with me?</p>
-                <a href="mailto:your-email@example.com" class="inline-block bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition-colors duration-300 text-sm mt-4">Send E-Mail</a>
+                <a href="mailto:thiesmk2@gmail.com" class="inline-block bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition-colors duration-300 text-sm mt-4"><i class="fa-solid fa-envelope mr-2"></i>Send E-Mail</a>
             </div>
         </div>
     </div>
